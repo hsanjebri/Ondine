@@ -1,0 +1,614 @@
+{
+  "generatedAt": "2026-10-08T09:29:48.811Z",
+  "source": "unsplash",
+  "slots": {
+    "ring-01": {
+      "slot": "ring-01",
+      "id": "u91R8WPaKQU",
+      "raw": "https://images.unsplash.com/photo-1514612497953-05d1e5e171fa?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8M3x8ZGlhbW9uZCUyMHJpbmclMjBtYWNyb3xlbnwxfHx8fDE3OTE0NDk0NDF8MA&ixlib=rb-4.1.0",
+      "width": 6016,
+      "height": 4016,
+      "color": "#d9f3f3",
+      "blurHash": "LDPjfH$$?v%N_N%MD%RjM{RjRPRj",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAg0lEQVR4nB3KXQvCIBiA0f3/nzaoICMsZDo30dR31T4ounmCnevTlHUhL2/SqxKmzCiFQYReBFsLzfTZqOtMfBaGEvE54WvBi+Ck0My/L7ItjCVivMV4h4txT3uYtpX0FIzvUFqh9JW7c3QxYnOiCfmBDR6lL7THlvZ04Kw1t95hwsgfBtOTQ1iMDeMAAAAASUVORK5CYII=",
+      "alt": "Silver-colored clear gemstone ring",
+      "photographer": {
+        "name": "CHUTTERSNAP",
+        "username": "chuttersnap",
+        "url": "https://unsplash.com/@chuttersnap"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-colored-clear-gemstone-ring-u91R8WPaKQU",
+      "query": "diamond ring macro",
+      "downloadTracked": true
+    },
+    "ring-02": {
+      "slot": "ring-02",
+      "id": "bj60QB8xBl8",
+      "raw": "https://images.unsplash.com/photo-1621438872240-d30f55aaa59c?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTd8fHNvbGl0YWlyZSUyMGVuZ2FnZW1lbnQlMjByaW5nfGVufDF8fHx8MTc5MTQ1MTcxNXww&ixlib=rb-4.1.0",
+      "width": 2328,
+      "height": 3304,
+      "color": "#262626",
+      "blurHash": "L12iFSRj4nt7M{WBt7t700t7?bRP",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAAA20lEQVR4nIWQ226CUBBFRyuFipQjKAgKiNdTSoCixf7/j60G0takadKH9TJZ2Zm9RUT4h9+HMSIPfwgjE8vx8JcrFkGE7Xhf4shkbNgoLyBJcw4nPbBOtpi2Qgxb4agF602G1gV10w4czy9DmkzVAj+IyHcHqqrhvbtx7W4UZcUq2tyF/f5IXb/R3T5+hChOkMeZQvkh23xPWVa0lytNe+GkC5Zh3LeysGZz4nXK8aQpXkvOuiDJdsNv8l2xT4mTjDTLB9mdL5HJ9L7DZOri+iGuF2A9PSNi9BvwCQ8dbHrmAb8CAAAAAElFTkSuQmCC",
+      "alt": "Silver diamond ring on black textile",
+      "photographer": {
+        "name": "Salvador Escalante",
+        "username": "salvador_86",
+        "url": "https://unsplash.com/@salvador_86"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-ring-on-black-textile-bj60QB8xBl8",
+      "query": "solitaire engagement ring",
+      "downloadTracked": true
+    },
+    "ring-03": {
+      "slot": "ring-03",
+      "id": "nAzJ7VuKGbw",
+      "raw": "https://images.unsplash.com/photo-1583257681004-82c508fc2a6e?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8OHx8ZGlhbW9uZCUyMHJpbmclMjBtYWNyb3xlbnwxfHx8fDE3OTE0NDk0NDF8MA&ixlib=rb-4.1.0",
+      "width": 3309,
+      "height": 4963,
+      "color": "#c0c0c0",
+      "blurHash": "LWIOhG4n?b?b~qIUIU-;t7RjWBof",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABOklEQVR4nB2QPQvBcRDHb/U2eBcyWwxktRgoAyaDSBk8TAz/UooYDIQoeUjEQMnDKMpAmcQkL+Cj3w03XN/P3fe+J8fjkclkQrFYpFAosF6veb/f/H4/Ho8HcjgcFDBiPp9nuVzyer34fr/c73dkt9sxGo3I5XJks1mm0ynP55PP58PtdkM2mw3D4VDFZDJJv9/ner0qdD6fkdVqRbfbJZ1OE4vFaDQa7Pd7LpcLp9MJmc1mtFotEokEwWCQUqnEfD5XaLvdImZ9vV4nGo3i9XpJpVK0220Wi4WWmKZSqRAKhXC5XITDYe0HgwHj8RhpNpu6NhAIYLfb8fl8GtfYGkiq1ar+wO/3IyI4nU5NU6vV6PV6iGVZGtHj8SjgcDiIx+Nq0+l0kHK5TCaTwe12K2Cz2YhEIphBc98fcowH2s8Uk9EAAAAASUVORK5CYII=",
+      "alt": "Grayscale photo of a flower",
+      "photographer": {
+        "name": "Devon Rogers",
+        "username": "dev",
+        "url": "https://unsplash.com/@dev"
+      },
+      "photoUrl": "https://unsplash.com/photos/grayscale-photo-of-a-flower-nAzJ7VuKGbw",
+      "query": "diamond ring macro",
+      "downloadTracked": true
+    },
+    "ring-04": {
+      "slot": "ring-04",
+      "id": "q_sPpAv0MXE",
+      "raw": "https://images.unsplash.com/photo-1613945407943-59cd755fd69e?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8ZGlhbW9uZCUyMHJpbmclMjBtYWNyb3xlbnwxfHx8fDE3OTE0NDk0NDF8MA&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 4000,
+      "color": "#400c0c",
+      "blurHash": "LGD@8#AB5Q=f}aEfAC=faKR*xu-C",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAArklEQVR4nAXBPQsBcQDA4f/gJctlwKCknJQsJCd3XgYpeQnXkTopRJcrlBTKoFA+gNVkUQa7svtUP88jjsk6K1nDcDnYxCK8aj1+5oKPYXFVq4i1XMIKZxjKMQ5anqc+4GvavDsTTkoFoQs//UCUea7IpW1wN0c8+mNuVYNtooAoCUFD8jLNquzrLS56j3Ojwy5XxgqlEG2Pm6bkpBaU6MajzNIKy0wBO6Ew8Mn8ASLuS8Z3P+BIAAAAAElFTkSuQmCC",
+      "alt": "Silver diamond ring on red textile",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-ring-on-red-textile-q_sPpAv0MXE",
+      "query": "diamond ring macro",
+      "downloadTracked": true
+    },
+    "hand-01": {
+      "slot": "hand-01",
+      "id": "mSaYvzTy4-0",
+      "raw": "https://images.unsplash.com/photo-1614606140245-2c33ece9e2cf?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8Z29sZCUyMHJpbmclMjBoYW5kfGVufDF8fHx8MTc5MTQ0OTQ0Mnww&ixlib=rb-4.1.0",
+      "width": 3364,
+      "height": 5980,
+      "color": "#d9d9d9",
+      "blurHash": "LFNmHH.8*09_?wI:IAt7u5IVmk-q",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABOklEQVR4nB3KfUvbQADA4fv+OFgHIpvUTXwZ1kVtbdQSk75YzS2XJneXuySmBirMz/ET9vz9CO8/8G5HbVpqXVPbLY3b0ZqeLncI5//hqx21bmhKR61bvOlpyo5XVSGse8fbnrbwtFmJkyVGWqy0NFIjtO1xuqPLNd06xcZLsmiFSlLck0IU5StV4XmTim0cU96MWV1es57M0MkLIt94qtzSP6e83U1Rp8dEh0Pi3wGb2RKhcovNSvrVE904QB7uEw6+8vDzlOwuRihlsH83bBcLmqsL1gcDJl/2CIfHyGmEyJXByA3tfE4VXLD8vs948I3w1xlpGCEKVf0PLkkori6ZHw25/XHEw/kf0vsIoZXDyAKTzMluronPzglPRkTBlHT2iDCqxsiSIlnwMhnzOAq4H90ST2bIKOYTauM78psU48oAAAAASUVORK5CYII=",
+      "alt": "A woman in a white shirt is holding her hands together",
+      "photographer": {
+        "name": "Sama Hosseini",
+        "username": "samahosseini",
+        "url": "https://unsplash.com/@samahosseini"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-woman-in-a-white-shirt-is-holding-her-hands-together-mSaYvzTy4-0",
+      "query": "gold ring hand",
+      "downloadTracked": true
+    },
+    "hand-02": {
+      "slot": "hand-02",
+      "id": "MdcoI4O9vus",
+      "raw": "https://images.unsplash.com/photo-1686538246844-f3ca82434d95?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8Z29sZCUyMHJpbmclMjBoYW5kfGVufDF8fHx8MTc5MTQ0OTQ0Mnww&ixlib=rb-4.1.0",
+      "width": 4368,
+      "height": 6552,
+      "color": "#738c8c",
+      "blurHash": "LRHn?8_2gNWX014;RjofELRPxaoe",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABbklEQVR4nAXBfUsacQDA8d/Lio0RqwWxHrTNTDMoq8tjuTCkdsOYzeu4O7P0sJrmSCv3R5hZOrYerFwUErWiwhp7M98+H2EblunweGltt9Hc9Iq2ly+wv32D09GJ22VDuGQ/vd4xbD1OOlvasLe+xtnVjsfZzYDbjhifVvgwGUSWJHxuFz7HO3x975H6HYx6HIiIoROZU1FnFNTJj4TlUT6PDBH0DjAx5EakVldIp5J8t6Jk9DBLoSmiAT9hWUKRBhGFwibFrXVKm2mKqUXyZoRvoU+YgQlm/T7E0cEO1d/bnOzlOfyRprQUY00NE1em0YIBRP38F/Wzn9QPC/wpZqlkLNajGtaXGYyQgri9rnJ7uc9VrcRZeYNyNkluUScx9xUzMoto3J/ycHPE3/M9apUNdnJJMgmDBUNDN3TEv0aNxl2V64tdjis5tnIWy5aBOW+gxWKI/081Hu+rXF3sclDOks/GSVg62oKJGk/wDM6b+dxtKxnsAAAAAElFTkSuQmCC",
+      "alt": "A close up of a person's hand with a ring on it",
+      "photographer": {
+        "name": "Anh Tuan To",
+        "username": "tuan1561",
+        "url": "https://unsplash.com/@tuan1561"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-persons-hand-with-a-ring-on-it-MdcoI4O9vus",
+      "query": "gold ring hand",
+      "downloadTracked": true
+    },
+    "hand-03": {
+      "slot": "hand-03",
+      "id": "QjLE11j5FT8",
+      "raw": "https://images.unsplash.com/photo-1624489094663-a51a6c61d492?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8M3x8Z29sZCUyMHJpbmclMjBoYW5kfGVufDF8fHx8MTc5MTQ0OTQ0Mnww&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 3608,
+      "color": "#f3f3f3",
+      "blurHash": "LYJar}019aM|-;sl-;Iox]Ri%Mxa",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAoUlEQVR4nDXNMQ7BYABA4f8UbuIQJjewGhg6WIwNkdpEI22iVWkjmirVhqQprUgHDCIWVoO4xhPE8LYveaLfUzF0jWBqkAQW29Bhn4RcLyeerweiITVR5BaeOSBdWGShQ7r2OOQb7rczQghBuVhi2JHJPJM8dIj9EauZQRLZP/CpLdVY2YMvSOcWS0fFNZU/KFCvVhjr3e/iGPvsogm+q/EGyLVrWM28IesAAAAASUVORK5CYII=",
+      "alt": "Gold and silver wedding band",
+      "photographer": {
+        "name": "Ergo Zakki",
+        "username": "ergo_zakki",
+        "url": "https://unsplash.com/@ergo_zakki"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-and-silver-wedding-band-QjLE11j5FT8",
+      "query": "gold ring hand",
+      "downloadTracked": true
+    },
+    "hand-04": {
+      "slot": "hand-04",
+      "id": "H9dQSXNfDRk",
+      "raw": "https://images.unsplash.com/photo-1541896727348-a923c65d2bc4?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTN8fGdvbGQlMjByaW5nJTIwaGFuZHxlbnwxfHx8fDE3OTE0NDk0NDJ8MA&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 3376,
+      "color": "#d9c0a6",
+      "blurHash": "LQK,d2~B4nNZtm~Vs.D%E3SPtRt7",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAArElEQVR4nAXBvQsBYQDA4ff/MhgURTHIYLHI8m7KFcmAGyxcHIOSy8dJPqOciBuOblAyEUUW/8fP8whnVOey7PI8rnkcLQ7jHlopRyoeIebzIs59leusydte8DlZuCuTrlYkJ+PIqB9xaiW5DvJ89wY/d8XdnrA1a7RVSUWGEZYawNYS3IZlXpsO912P81xn2sjQSocQRiZIXwkzLyQ41LO4ZhVnrLHUFXTp4Q9UsG8hcqasMwAAAABJRU5ErkJggg==",
+      "alt": "Person wearing gold-colored ring",
+      "photographer": {
+        "name": "Arwan Sutanto",
+        "username": "arwanod",
+        "url": "https://unsplash.com/@arwanod"
+      },
+      "photoUrl": "https://unsplash.com/photos/person-wearing-gold-colored-ring-H9dQSXNfDRk",
+      "query": "gold ring hand",
+      "downloadTracked": true
+    },
+    "necklace-01": {
+      "slot": "necklace-01",
+      "id": "hd3j5W8Aucs",
+      "raw": "https://images.unsplash.com/photo-1673178875233-a1f2e0124b7e?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTZ8fGRpYW1vbmQlMjBuZWNrbGFjZXxlbnwxfHx8fDE3OTE0NTE3MTZ8MA&ixlib=rb-4.1.0",
+      "width": 2641,
+      "height": 4000,
+      "color": "#d9a673",
+      "blurHash": "LUMF5h%29]s.5RR+9vIp0zR*NaoL",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABf0lEQVR4nAXBXUtTARzA4T9In6GkLruILiMFIQipsNILNSWXggz1bNU86Obmtqae2ZH5snSN1cbUeSpfKOhCUUR8Qy3QXG15sVKrqXP6MX49j4gIV4uuoCv3+NxVy0JXJcazEuzlBVy8JogUXuBu6XWCzx8yq9WxpNUwpd7GW32JkpuC1JQVYzfdweh8zGq/mc1AA7PuckbMN1AqLiND1kfE7U9Y7FPYfW0jFVLY0E3M2O8TbLqFzPmtLAdsJMMO9uNODmJtpEZaWOk18dFVhfyIuNl76+FwzMfJxAtyiU4OYyrJVy2s6Y3IP0PjyNDIGRpn77o5N7wcjznIRGx8CyrI2fRL8pO95IweThM+8gkPuXEn+1GV78MWJD/t5+R9D39HvfyJusjGnGTjDn69sbEz1IRkP/g4GHezF24nHWwlE1L5HVFJhyys6/VIJtFBOtrG1wELW/5mkgELP4etbA+amfdVIam4ynb4Kcv+RpY8DXzRzOz2N7Oh1/PJ9YD/GjP4+5pGfmkAAAAASUVORK5CYII=",
+      "alt": "A close up of a woman wearing a necklace",
+      "photographer": {
+        "name": "John Rst",
+        "username": "johnhmar_rst11",
+        "url": "https://unsplash.com/@johnhmar_rst11"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-woman-wearing-a-necklace-hd3j5W8Aucs",
+      "query": "diamond necklace",
+      "downloadTracked": true
+    },
+    "necklace-02": {
+      "slot": "necklace-02",
+      "id": "JG_xxq3g7EQ",
+      "raw": "https://images.unsplash.com/photo-1762505464446-c0760d740aee?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mjh8fGdlbXN0b25lJTIwY2xvc2UlMjB1cHxlbnwxfHx8fDE3OTE0NDk0NDZ8MA&ixlib=rb-4.1.0",
+      "width": 2869,
+      "height": 2152,
+      "color": "#a67359",
+      "blurHash": "LHJP-%^*S2?F57-UWVNH0fIpR*Rk",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAA0UlEQVR4nAHGADn/AJVyUP+RbUz/iGBD/4NXPP+DVzf/flUu/2xEDP9MHQD/AKiDYf+jfV3/mG5T/5FlS/+SZkj/j2ZD/39YMv9lOwT/AMmffP/Cl3f/s4Zr/6p7Yv+sfmH/rYFf/6F2Vf+LXkP/ANmtif/RpIT/wJJ3/7eHbv+8jG7/wJJv/7eJZ/+icVj/ANKnhP/Knn7/uYxy/7KDav+6i2z/wpJv/7qKaP+mdFn/ALyUcv+0jG3/pXti/6J1Xf+uf2H/uYhk/7KCXv+fbk7/zUJ2mHYqnCkAAAAASUVORK5CYII=",
+      "alt": "Close-up of a woman's neck with diamond necklace and ring",
+      "photographer": {
+        "name": "Shoham Avisrur",
+        "username": "shoham_avisrur",
+        "url": "https://unsplash.com/@shoham_avisrur"
+      },
+      "photoUrl": "https://unsplash.com/photos/close-up-of-a-womans-neck-with-diamond-necklace-and-ring-JG_xxq3g7EQ",
+      "query": "gemstone close up",
+      "downloadTracked": true
+    },
+    "necklace-03": {
+      "slot": "necklace-03",
+      "id": "QafMBhBRYOY",
+      "raw": "https://images.unsplash.com/photo-1616294208582-c2a6d73b467b?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTd8fGRpYW1vbmQlMjBuZWNrbGFjZXxlbnwxfHx8fDE3OTE0NTE3MTZ8MA&ixlib=rb-4.1.0",
+      "width": 3976,
+      "height": 5128,
+      "color": "#c08c73",
+      "blurHash": "LMJj0Y~Bo}E20g^*X8Ip%1M|W;f*",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAYAAACJxx+AAAABKUlEQVR4nE3KSUsCYQCA4e8nVEIQHcRTC3TrGFaHbm5Jh25CZkqbo6XgN67QYgQjLjMjXqJTdDAIzNRKzbTtT71Rp87PI+pahmY5x6uRpZOPUPU7CcxZcNkmCHlWEf9DOx/B3HISmLXgso4RdK0g7rQ0zVKWvp7hMa9g/IaZSTzT44QcdsS9luKxlKGnp3nIh9G33ewuWNm0TbHvWEY0tCTtUoqunuThIkw15OV4aYGdxXniG2uIVkHlqZykp6s0LxWulE1O1u2oTjtnWx7Ec1HSq6i8GpKOFuFW+jCCbkpBL7WYD9EvSwa6ZGhK+sUjGqdBblUfNyk/9fMDxNBI8G5KPk3JqBKjqx3SutyjVVB4MROIP6xKvqsJvow4o0qUgR7lrZbg4zrHD2mPx0sClIp0AAAAAElFTkSuQmCC",
+      "alt": "Woman wearing silver necklace with heart pendant",
+      "photographer": {
+        "name": "Amanda Hortiz",
+        "username": "amandahortiz",
+        "url": "https://unsplash.com/@amandahortiz"
+      },
+      "photoUrl": "https://unsplash.com/photos/woman-wearing-silver-necklace-with-heart-pendant-QafMBhBRYOY",
+      "query": "diamond necklace",
+      "downloadTracked": true
+    },
+    "earring-01": {
+      "slot": "earring-01",
+      "id": "3zF00hHQb3I",
+      "raw": "https://images.unsplash.com/photo-1611653842967-39eb011b2ca3?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8ZWFycmluZ3MlMjBwb3J0cmFpdHxlbnwxfHx8fDE3OTE0NDk0NDV8MA&ixlib=rb-4.1.0",
+      "width": 4016,
+      "height": 6016,
+      "color": "#d9d9d9",
+      "blurHash": "LTNd5cxt_NIoD$og-;fkS$IoMw%M",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABQ0lEQVR4nCXM2UoCUQCA4fPeQVQXBSUtVmCphEurlLa5m1gpLtk4+8yZzUnrNf6I7j8+YYc6ijGi1ShTyByRSiY4L2TptJ/QlD7CCQ1UY0ynec9F9piTgx2KuVM6rUd0ZYDw5hamPeW9W+U2lyK9v0kunaRZL2OoI0QYu3hS43PQpnaZ4Wx3nezhFvWnEpb+gfha+MwDC/vjjd5dnuLuKunEKtXKFY45QywXIcu5JNJGjJ+vKSXXyGyvUC1fIm0D8b2M+Il9FtYnarvCw8k2+b0N6vclPNf+GyK+Y5+lrWL06jSLKUrpJJ3aI750EXEc8BV5xLaG2e/Sq1xTvbngvfuCLyUiiCRh4BCYGuawz7DV4LXZYDIc4rsewg0cXGnh6DP08Zhpf8BkMEJTtH9geRamY6CrM9TJlNlEQVV0LMPBcyS/dDA6rKnW/XkAAAAASUVORK5CYII=",
+      "alt": "Woman in white shirt wearing silver earrings",
+      "photographer": {
+        "name": "Kateryna Hliznitsova",
+        "username": "kate_gliz",
+        "url": "https://unsplash.com/@kate_gliz"
+      },
+      "photoUrl": "https://unsplash.com/photos/woman-in-white-shirt-wearing-silver-earrings-3zF00hHQb3I",
+      "query": "earrings portrait",
+      "downloadTracked": true
+    },
+    "earring-02": {
+      "slot": "earring-02",
+      "id": "4vqJpF4q4kA",
+      "raw": "https://images.unsplash.com/photo-1634149136549-47350a401065?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8ZWFycmluZ3MlMjBwb3J0cmFpdHxlbnwxfHx8fDE3OTE0NDk0NDV8MA&ixlib=rb-4.1.0",
+      "width": 4000,
+      "height": 6000,
+      "color": "#c0a68c",
+      "blurHash": "LMLzT?-;-;NdQ+RiaeV?.TR.IUxu",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABWUlEQVR4nBXJW0/TYACA4e//mXCD19xh5EqJCSYQATNEzUAzKGMHNke7jo0dOtrRlrKy9mNbD6AjQIhe8VNew3P7iBu/Szpsk7hNJgMNadYI+hUC4wjZO0K8ZOq1iG2d8Uv2yvjdIledIrJbQiSuTuJoRGaVsJ3nQv+JrWa5qP9g1FQQsVUhNstMOgpD9Rtn+TXaeyucFTbw1R1EZOSJugrXjSxuYZWTr4v82lygtfMOr/IFMe0dMO3sIbVtBrn31NbmyX94hZZZxCl+RkT9MlHvEFn/jpVbprr6mv3lOY4zb3FKGUTqNEkGGuOWgn24jppZovDpDfXsR5xqFvE7cLn1TaamhqfmOFW2UHNbtEu7eI0C4i6NmU0lyaXFyNAZnFQxGjWsU42hoSMeHp64n824HYdMvHN828JzbIbuOSOnj3j698zj41/+pCmxDBiHAVJeE4YBoe/wH213HuGlkoBtAAAAAElFTkSuQmCC",
+      "alt": "A woman in a white shirt is holding her ear",
+      "photographer": {
+        "name": "Olena Bohovyk",
+        "username": "olenkasergienko",
+        "url": "https://unsplash.com/@olenkasergienko"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-woman-in-a-white-shirt-is-holding-her-ear-4vqJpF4q4kA",
+      "query": "earrings portrait",
+      "downloadTracked": true
+    },
+    "earring-03": {
+      "slot": "earring-03",
+      "id": "dgtDa8ZHTig",
+      "raw": "https://images.unsplash.com/photo-1676146260286-1a84d61b9df9?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8OHx8ZWFycmluZ3MlMjBwb3J0cmFpdHxlbnwxfHx8fDE3OTE0NDk0NDV8MA&ixlib=rb-4.1.0",
+      "width": 5304,
+      "height": 7952,
+      "color": "#404026",
+      "blurHash": "LME3I+?uOraK~q%MkWRjyqt7xYIU",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABa0lEQVR4nBXKWy+CcQDA4f9HcO2CO8xMa8s5c4E5Ts7nDtQrJOWUkNI7Ua9Rzmumac1hjIkwW6MLm7HxlX7muX7Ew/cLzz9p0r8Znj9eiF/HCO2u44/IKPEDxP3nE6mvV16/06Qyj8QvTwiFZda2fWyeRhA3b3fcZe55eE9ym7oiFttFCa7gW3ezFgkgEskE58kEF7dnJOKHRMMyimcGj8vO/Mo8Inp2QDS2x/FRiCNllX2PA2XazJJFj8U4jNgJB9hSfGyuOgk6R9iy9rNh7GauvYXOimqE7FvA67bjHu9nebAeubcWf0cdNm05NSIL4XKNM+swMWVoxtFeirtVw2JDGaOqfFRCIOxzJianB5HMLVj7tNh1Gmz1KnrVORT8B2lRj7QwjMXZh2RtwzxQw1BTMY1VuRSWZCNMHj1m7whjXgnJZWTI0kpzm5rKhjzUuhKEwW9gNCAxEXQw5rfRM9WNtkuDSldEmaGWP5Lo4UE5XuvlAAAAAElFTkSuQmCC",
+      "alt": "A woman with a green shirt and earrings",
+      "photographer": {
+        "name": "zana pq",
+        "username": "zanapq",
+        "url": "https://unsplash.com/@zanapq"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-woman-with-a-green-shirt-and-earrings-dgtDa8ZHTig",
+      "query": "earrings portrait",
+      "downloadTracked": true
+    },
+    "stone-01": {
+      "slot": "stone-01",
+      "id": "qeUldVv1kdM",
+      "raw": "https://images.unsplash.com/photo-1750767324156-03168af8f8a5?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjB8fGdlbXN0b25lJTIwY2xvc2UlMjB1cHxlbnwxfHx8fDE3OTE0NDk0NDZ8MA&ixlib=rb-4.1.0",
+      "width": 8192,
+      "height": 5464,
+      "color": "#402626",
+      "blurHash": "L57m+?9[4Uo}=wI;$iX8Dixt-=M{",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAl0lEQVR4nBXEWwvBABiA4U/KlVNSTENkYWytRtvClLY5NWUbNafy/3/EK8/FI4YIdlnYDAoEVoPIUTkse8QzhVSpItOSYDUL+HqH09rguvdI9yvSlUUyaiPdmjDpNtgsDK7nkM8j4/u684gjYnOISFFQWnUc2+ByCnnmGe/8RnIM8Md9RET+oWsqW8/ksHMJfQd3PkWTCj+cuz4of2Y18QAAAABJRU5ErkJggg==",
+      "alt": "A sparkling diamond rests on a bed of wood",
+      "photographer": {
+        "name": "PRAHANT STUDIO",
+        "username": "prahantstudio",
+        "url": "https://unsplash.com/@prahantstudio"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-sparkling-diamond-rests-on-a-bed-of-wood-qeUldVv1kdM",
+      "query": "gemstone close up",
+      "downloadTracked": true
+    },
+    "stone-02": {
+      "slot": "stone-02",
+      "id": "5O8n5fF058o",
+      "raw": "https://images.unsplash.com/photo-1750767323968-a4214fd67511?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MzB8fGdlbXN0b25lJTIwY2xvc2UlMjB1cHxlbnwxfHx8fDE3OTE0NDk0NDZ8MA&ixlib=rb-4.1.0",
+      "width": 8192,
+      "height": 5464,
+      "color": "#402626",
+      "blurHash": "L371Av1H9Y-;=yMy9toz4n%2-=IU",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAl0lEQVR4nBXK2Q7BQABA0fkCIojQogtt2pmqEE1NbQmqqS2WBE/+/yuuOM9HNJo1jHoV2aig+21y6VGOJXnksXRaiJ5r4lgdRpbJWoVc9JzHZsVVJ2yljZDTABn7TEYhO53xKk98b3c+5YHjTCGiRPFPUSxZpCmXvOB9PvPcbykmEuHFHo5yMYZd7EGfOPDRkWIZ+mS2wQ/S1D8e21g3DwAAAABJRU5ErkJggg==",
+      "alt": "A marquise diamond rests on a rough surface",
+      "photographer": {
+        "name": "PRAHANT STUDIO",
+        "username": "prahantstudio",
+        "url": "https://unsplash.com/@prahantstudio"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-marquise-diamond-rests-on-a-rough-surface-5O8n5fF058o",
+      "query": "gemstone close up",
+      "downloadTracked": true
+    },
+    "skin-01": {
+      "slot": "skin-01",
+      "id": "H5z9ZgWBMBo",
+      "raw": "https://images.unsplash.com/photo-1705326454933-9685fc6888e1?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8M3x8Z29sZCUyMGVhcnJpbmclMjBtYWNybyUyMHNraW58ZW58MXx8fHwxNzkxNDQ5NDQ3fDA&ixlib=rb-4.1.0",
+      "width": 3472,
+      "height": 5208,
+      "color": "#f3f3f3",
+      "blurHash": "LOP6srsnS6xuWS_4Rjs+E49FIUt8",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABPUlEQVR4nB3M7W6aUACA4XP/N7FkP9plabe19ouCWnAyFRA4BzkWzuFDMbq027I06d93yZ4LeIRKvpOvfJIfLjJyqVWALWfksYPnniHKNKRIZmRLDxV71MrHlgEyfmDiniMaHVEXC3Tqo9MxRk2xxQQZ3+JPPiFOneRg17RliJFTrPIw0kFFI0L/M+LvSfN7UBzNin7zRCMdTHbDJr4inn9BvL9WvP0seekSBu3TyntMeo1OrpGrEeL9ZcvbacNrGzHoJ9r8/v9QZXdsUxfx56D4tUs5ViF9MabJH7DSwaoJppgh9s9Lej2nyceYtYPNXNoioNML2m2EUCsPuXCQ4YjN4oY6m9JvY/ZGsTMKETx+Y+ZcED6esw6+UqUB+7rg0NXsmwpxe3nG3eVHvKsPLMcXPKdzBltx3PUMXcM/cExH8a8QeRMAAAAASUVORK5CYII=",
+      "alt": "A close up of a pair of gold earrings",
+      "photographer": {
+        "name": "Atul Mohan",
+        "username": "atulmohan",
+        "url": "https://unsplash.com/@atulmohan"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-pair-of-gold-earrings-H5z9ZgWBMBo",
+      "query": "gold earring macro skin",
+      "downloadTracked": true
+    },
+    "skin-02": {
+      "slot": "skin-02",
+      "id": "zwMUC0o9_74",
+      "raw": "https://images.unsplash.com/photo-1733935156769-fe0c2a600d6c?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8Z29sZCUyMGVhcnJpbmclMjBtYWNybyUyMHNraW58ZW58MXx8fHwxNzkxNDQ5NDQ3fDA&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 4000,
+      "color": "#a6590c",
+      "blurHash": "LgK[?[$$xXt5~7bHoKba%JWXWVoL",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAArElEQVR4nB3JsQoBARzA4X+5QhaD1WigFJGSYmSQZPAKWJB4AYN0chPFIBYDunIymXgBg45RIQaLyWL5ieGbPvlsE7w3MZ56iOs0yGUW4W5EeRghbnMP8lqFeS4CnEdezJ6Hw8CHOfZzmng5Dt2IqbnYt5zsGgrrgqCXBL0mLOsKRtmCbKryj2lO6MeF7k9K0NKClhRkWXEwK9oY5BXUpIV2ykona0fNKTQzwhdJ3Fvyqc7kGQAAAABJRU5ErkJggg==",
+      "alt": "A textured gold leaf surface with visible overlapping seams and a soft shadow",
+      "photographer": {
+        "name": "Colin Watts",
+        "username": "colinwatts",
+        "url": "https://unsplash.com/@colinwatts"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-leaf-surface-with-soft-shadow-zwMUC0o9_74",
+      "query": "gold earring macro skin",
+      "downloadTracked": true
+    },
+    "pearl-01": {
+      "slot": "pearl-01",
+      "id": "SqYcPuUG1W4",
+      "raw": "https://images.unsplash.com/photo-1610214354095-684029c14300?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8YmFyb3F1ZSUyMHBlYXJsJTIwZWFycmluZ3xlbnwxfHx8fDE3OTE0NDk0NDh8MA&ixlib=rb-4.1.0",
+      "width": 2666,
+      "height": 3999,
+      "color": "#260c0c",
+      "blurHash": "L+LeW9rsI?Nc0$xss,ayNdNHt5s.",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABe0lEQVR4nB3KbSjcAQDH8V9tXng1FN3mPFzjWvPm+IvjjrtLW7EuprVOTGRISpe7lBe84BBeYF2UjRfbrbQr24uNF1t7QHuhPM1LZdZaa46kaNiLr9rn9UeSsEh4JR5KlEpIyUgZ6EY2ipewS9RJNEtU6QqJ/0M6SruJyuJEnVn05IrBgqsEchIoNyVjTkkly5qJWi2it1DM3k9irtbM5AMzfo+JKuM61flpKJR3jekKE+/bsvnadZt3fivjjzII3EslcDcdTXssvPFZ+dZtY3fYYG3ARrTzFhMNWYzVWFHUm8PnJhs/QoUcTRazF7bzJWTwKpjLXIeBFn0Gq+0F7I84OHtWyuGMi+0nLj4NufjQ50EfG+xs+Is4GHXyb9bNyfM77M2UszXlZT1ciZZaHWx2OogNO7l46uEsUkHsZTXfIz52IrVoub2EzaCT34PF/J1ycx7xchyt4c98I79eP0YrHS7Wg05+9hdxEnZz/qKS0/l6jt62EFto4xKlYM/4xxBVUgAAAABJRU5ErkJggg==",
+      "alt": "Woman wearing silver and gold necklace",
+      "photographer": {
+        "name": "Ruan Richard Rodrigues",
+        "username": "ricdeoliveira",
+        "url": "https://unsplash.com/@ricdeoliveira"
+      },
+      "photoUrl": "https://unsplash.com/photos/woman-wearing-silver-and-gold-necklace-SqYcPuUG1W4",
+      "query": "baroque pearl earring",
+      "downloadTracked": true
+    },
+    "pearl-02": {
+      "slot": "pearl-02",
+      "id": "3ai_aJpH9hA",
+      "raw": "https://images.unsplash.com/photo-1682822749969-61a63203c501?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8M3x8YmFyb3F1ZSUyMHBlYXJsJTIwZWFycmluZ3xlbnwxfHx8fDE3OTE0NDk0NDh8MA&ixlib=rb-4.1.0",
+      "width": 4101,
+      "height": 4101,
+      "color": "#d9c0a6",
+      "blurHash": "LJN00F0LIVIp0LIVxtWBxZ-p%2jF",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+UlEQVR4nB3KTUvCcADA4f8X7FaHLhJEh7oYClpiUMtCInNLrLW5Zi4JGtlG84Wmtgx6ITTFg5nGPsov6Dk/orKzyk1mHUeJU1e38NQEDS1JYO3Rd04QRiqCJa1xL8doXGzT1FO0jDS9aoaBm0co8UX0dIS7fJTHUppuRSKoHvJqHzN8KCCy0QWKqWVq8iZBReLNzvFRO6XvFhnXzxG5xBK6tIKnJnm/PWLonTFqaoybOpOWjrjKbmArMZ6v9xl5BSZ+iUnb5Ns3+fENRKu0S2AdMHBlpm2NeWAyeyoz65j8dkzEpy3z5RSY+hphr0z4Uv5P8+4lYdfkD4ZGufO7oNcMAAAAAElFTkSuQmCC",
+      "alt": "A pair of pearl earrings sitting on top of a table",
+      "photographer": {
+        "name": "Nataliia Hordiiuk",
+        "username": "whynotnatali",
+        "url": "https://unsplash.com/@whynotnatali"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-pair-of-pearl-earrings-sitting-on-top-of-a-table-3ai_aJpH9hA",
+      "query": "baroque pearl earring",
+      "downloadTracked": true
+    },
+    "pack-01": {
+      "slot": "pack-01",
+      "id": "PoOkE5tF3Xc",
+      "raw": "https://images.unsplash.com/photo-1571867424482-080d3226551d?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NXx8amV3ZWxyeSUyMHBhY2thZ2luZyUyMGJsYWNrfGVufDF8fHx8MTc5MTQ0OTQ0OXww&ixlib=rb-4.1.0",
+      "width": 4000,
+      "height": 6000,
+      "color": "#262626",
+      "blurHash": "LC82%l$jArJ,,@oLODWp1wJ,,@$6",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABQElEQVR4nC3K0UsUURhA8c+sh3WX2Vln7sz95s6duXdnrVYrjESoth7STSKlh1gEFSKCJJ9EQTAiMHqK/ucTgQ/n5ccRuf8I6aas+8iLXJkNC54lJT5VZKSIrG1QdA/Z9pF5UTEflTxPLd1IufN/sJMpm90DDprIkToOC2XPKE9zpVm1yJNujfl4wpc2cu4bzuqahXO8LpXNrERmMfIxRC5D4CYErmPL59azVymz3CA7Tc1x6/kRWv6MIzdd4DR69p1lJ8uQ3Vo58RU/24a/48CvSeB07HnvSt6spsiryrKolCtf8zs0fI8Nn1rHrhpeDhPksbW8tcpXVS6c45t3fHCWrTxjY2WALJUV00J5Z0oWpmDfGLaynCwZIXf7iBQeySuS1BAHKeXKEOmlyL0EkR4ipkEyh/QzZLl/i4PbevwDJDaIVX0IKUgAAAAASUVORK5CYII=",
+      "alt": "Silver diamond studded ring on brown wooden box",
+      "photographer": {
+        "name": "David Dvořáček",
+        "username": "dafidvor",
+        "url": "https://unsplash.com/@dafidvor"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-studded-ring-on-brown-wooden-box-PoOkE5tF3Xc",
+      "query": "jewelry packaging black",
+      "downloadTracked": true
+    },
+    "pack-02": {
+      "slot": "pack-02",
+      "id": "eD1RNYzzUxc",
+      "raw": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8N3x8amV3ZWxyeSUyMHBhY2thZ2luZyUyMGJsYWNrfGVufDF8fHx8MTc5MTQ0OTQ0OXww&ixlib=rb-4.1.0",
+      "width": 6720,
+      "height": 4480,
+      "color": "#262626",
+      "blurHash": "LPC#AFbG]TSg}ZSgsUNvNuN^6ONv",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAoUlEQVR4nBXFSw7BUBiA0X9sERISr6QlxKNpJU1Fe6vubYWBDRgZEgvoiAQzMWAqImIBdveJMzmyNQtyM+eazriblLNOyZOM0yTjkaTIRc+4TjMuiWE/0exizSY2HGPDK9bIVyk+YcQhCMn8MQU/JAoi8pHiGSjk7XncHJd1Z4C0BkjbQXouq/6QY9dDlvUmpmphlxpIsYb8r1hUKza6bPEDMARL3FwT81cAAAAASUVORK5CYII=",
+      "alt": "Red and gold beaded necklace",
+      "photographer": {
+        "name": "Tamanna Rumee",
+        "username": "tamanna_rumee",
+        "url": "https://unsplash.com/@tamanna_rumee"
+      },
+      "photoUrl": "https://unsplash.com/photos/red-and-gold-beaded-necklace-eD1RNYzzUxc",
+      "query": "jewelry packaging black",
+      "downloadTracked": true
+    },
+    "paper-01": {
+      "slot": "paper-01",
+      "id": "1GuZ9y1qAT8",
+      "raw": "https://images.unsplash.com/photo-1697800628777-13c65123dc2f?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NHx8cGFwZXIlMjB0ZXh0dXJlJTIwY3JlYW18ZW58MXx8fHwxNzkxNDQ5NDUwfDA&ixlib=rb-4.1.0",
+      "width": 5304,
+      "height": 8000,
+      "color": "#d9d9c0",
+      "blurHash": "L8O:wr-;0L-:EmM{adadH=$$xta#",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABGklEQVR4nB3P246bMABFUf//z1Sq1NEohHCZhEsCJtjG2GCcNHzIrujDetvS0RFantAyQfdnpiHDqQKnc8Y+oan+IPSQoOUZLVPsM8frEq8LlDzTVl8I/byghwtmyJhVyWpvrPaKeWbcm2+EUQVmLJjUD36q2HzD5musLunuCcLoKwdrKlbX8g4P3uGOtzeGLkVMU81htg3b8uATez6xY3U1o8wQ1jYc/NwS1wf7S7K/eoKrUUcwzw3O1ixzTVxa9tixxwfBVSiZIvxc/d9b7I3oKvbQ8gkNqy0ZuxPiuLRMP6ymINqSj7/y119ZdMZw/0KEqSCYnFWlRHPhbXNeNsc9E2T9G7FNGUGnhDFhUyde5ghTZvlNf/vFP6xJSOUorkBWAAAAAElFTkSuQmCC",
+      "alt": "Crumpled blank paper texture",
+      "photographer": {
+        "name": "Heather Green",
+        "username": "heathergreengreen",
+        "url": "https://unsplash.com/@heathergreengreen"
+      },
+      "photoUrl": "https://unsplash.com/photos/crumpled-blank-paper-texture-1GuZ9y1qAT8",
+      "query": "paper texture cream",
+      "downloadTracked": true
+    },
+    "bw-01": {
+      "slot": "bw-01",
+      "id": "jllykvuIz7A",
+      "raw": "https://images.unsplash.com/photo-1647202192777-4696e20c68b3?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBvcnRyYWl0JTIwZWFyfGVufDF8fHx8MTc5MTQ0OTQ1MHww&ixlib=rb-4.1.0",
+      "width": 3840,
+      "height": 5760,
+      "color": "#f3f3f3",
+      "blurHash": "LONm=[xu~qx]?bRj9FRj9FayD%j]",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABQ0lEQVR4nCXQ60vCUABA8fv/E9ELiqiIHkZRpL1Qe1nW1HnvrtvcbDqVMsvUIssi6XEi+374fTii4Ppo20VJhcxLLG2jHQ9VcDFNiXD9ANv1sJRG5tV/4Hpou4iUFiKsXxOUQ5w/Ja+QSg8Dxyvhuh7ivt3h5raJ718NBTOv0E4RP6gQhlVEr/9Gp/tEuRxi5iRGJodlO5TDGo1GEzH4+qb30ies1MgYWVJnaUxLU6nVabXaiG/gtf8+FM5SaRLJIy5z5lB4eOggPn/g+eUVzyuRiB8Sje1xen6BVwpoNu8Rbx8D2t1HlNRsb0WJrG1wkDxCFWyq1Tri8bnHdeOW9PkFK0urzM0vshXbJW1kcZwionHXohRUSMSTzM7MMjk1zcr6JonjUwwj+zfqhoJTJBbdYWJsgpHRcRaWI+zsxzk5SfELbO5IdNNqW9AAAAAASUVORK5CYII=",
+      "alt": "A man is holding his head with his hands",
+      "photographer": {
+        "name": "Bansah Photography",
+        "username": "bansahphotography248",
+        "url": "https://unsplash.com/@bansahphotography248"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-man-is-holding-his-head-with-his-hands-jllykvuIz7A",
+      "query": "black and white portrait ear",
+      "downloadTracked": true
+    },
+    "bw-02": {
+      "slot": "bw-02",
+      "id": "K70OrM5RxoE",
+      "raw": "https://images.unsplash.com/photo-1605740043623-d1bb41dd2f44?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Nnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBvcnRyYWl0JTIwZWFyfGVufDF8fHx8MTc5MTQ0OTQ1MHww&ixlib=rb-4.1.0",
+      "width": 3456,
+      "height": 5184,
+      "color": "#d9d9d9",
+      "blurHash": "LcFPHS?b%Mt7~qxuxuof%MM{M{of",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABOklEQVR4nD2Ov+sBcRyHP3+AXdluMbIqJYOBbkDJxKROFotkuFNSVpGTUXclbkGSH2GUJJNNkjLwXzzf7qO+w7O8Xk/v11t8v19erxfX65XdbsdqtWKz2bBer1ksFojP58Pz+eRyucjCDZfLpWQ6nSLe7zf3+53j8ch8Pmc8Hksmkwmj0QjxeDy43W7s93ts28Y0TXq9Hv1+XyLc8nw+M5vN6HQ66LpOrVbDMAwajQbidDpxOBywLEuGuVyOTCZDPp9H0zTEdruVz3S7XYrFIuFwGL/fTygUIpFIIBzHYTgc0mw2yWaz+Hw+hBASVxSDwYB2u02lUkFVVbxe778gabVa1Ot1uRePxwkGgyiKgsfj+QnVapVyuSyfcy/EYjGi0SiBQOAnlEolCoWC3E8mk6TTaVKpFJFIRAp/qpfq91kuPFsAAAAASUVORK5CYII=",
+      "alt": "Man wearing black sunglasses and white earbuds",
+      "photographer": {
+        "name": "Muhammad-Taha Ibrahim",
+        "username": "planeteelevene",
+        "url": "https://unsplash.com/@planeteelevene"
+      },
+      "photoUrl": "https://unsplash.com/photos/man-wearing-black-sunglasses-and-white-earbuds-K70OrM5RxoE",
+      "query": "black and white portrait ear",
+      "downloadTracked": true
+    },
+    "blur-01": {
+      "slot": "blur-01",
+      "id": "n25kFUt7oX4",
+      "raw": "https://images.unsplash.com/photo-1675596958853-5752973313c1?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8N3x8bW90aW9uJTIwYmx1ciUyMHBvcnRyYWl0fGVufDF8fHx8MTc5MTQ0OTQ1MXww&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 4000,
+      "color": "#0c2626",
+      "blurHash": "LVEefmav0ckYD$Nxxv$gWAs:R*R%",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAApElEQVR4nC3JPQsBARzA4f9XsPEdxGASkUKUEmdxtxDKuzLpynmLkihEDHIJMZksWPhiPynDMz0iIvzEnE70ZJ5F3mCeNagHNP4n2KyC4vHRVqusa2PW1SmtRAO7WBCXO0DIH6SkqExqXcyOidm7MKrMSHnjiD+aRFPSDMtNjoMNt+Wd8/zBWN+TSRQQRyRMTlXZ6X2eqysv88Np+6ZjHEininwBEkZWMVfCJoYAAAAASUVORK5CYII=",
+      "alt": "A blurry image of a woman with a hat on her head",
+      "photographer": {
+        "name": "Katsiaryna Endruszkiewicz",
+        "username": "endka_1",
+        "url": "https://unsplash.com/@endka_1"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-blurry-image-of-a-woman-with-a-hat-on-her-head-n25kFUt7oX4",
+      "query": "motion blur portrait",
+      "downloadTracked": true
+    },
+    "water-01": {
+      "slot": "water-01",
+      "id": "HlQf_iNy9ug",
+      "raw": "https://images.unsplash.com/photo-1514351630998-ad9175c7791d?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8d2F0ZXIlMjByaXBwbGUlMjBnb2xkZW4lMjBsaWdodHxlbnwxfHx8fDE3OTE0NDk0NTJ8MA&ixlib=rb-4.1.0",
+      "width": 4608,
+      "height": 3456,
+      "color": "#f3f3f3",
+      "blurHash": "L$RB92I9W=WX_Nv|jaofF3XRn$kC",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAwElEQVR4nDXKPUsCARyA8f/ncMjP4Bdok6ZmlzYzcBD3QGkSEYcrMBcHB1t8GU5cNBUitcUaglNvEIVLEbkLfMG3Sx8H84Hf9shqUOGkzmb8iT0fwX7LOdlqWXZajr+eCsM3MLuwNv+nA2KXQxyqD9CIwVcK9CL8fIClw9JALMXJLOlil7kG9Q5eQ9BMwHce+jWkdSu0A0IvLBhxB5NnN9O0l99CmEX5EYleCk9XwotHKPmEavCC93s37cgNHcXPEfRel8q8JjohAAAAAElFTkSuQmCC",
+      "alt": "A picture of a circular object in the sky",
+      "photographer": {
+        "name": "John Peters",
+        "username": "johnphiker",
+        "url": "https://unsplash.com/@johnphiker"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-picture-of-a-circular-object-in-the-sky-HlQf_iNy9ug",
+      "query": "water ripple golden light",
+      "downloadTracked": true
+    },
+    "water-02": {
+      "slot": "water-02",
+      "id": "i14h2xyPr18",
+      "raw": "https://images.unsplash.com/photo-1483691278019-cb7253bee49f?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8aGFuZHMlMjBpbiUyMHdhdGVyfGVufDF8fHx8MTc5MTQ0OTQ1M3ww&ixlib=rb-4.1.0",
+      "width": 5814,
+      "height": 3876,
+      "color": "#f3f3f3",
+      "blurHash": "LlK-%$~Ut5of_NxYayaeT2IURjoL",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAsElEQVR4nAGlAFr/APj8+v/0+/r/6vb7/9/w/P/V6Pz/yeD5/7vY9f+r0vD/AP398//4+vL/7fLv/93n7P/O2+j/v9Dj/6/H3f+iwdn/AP/24P/58dz/6uLS/9XPxf+8urj/pamt/5Oco/+JlZ3/AOrfx//k2ML/1Ma0/7yuo/+hl5T/iISH/3V0e/9pZ2//AMC5s/+6s67/qqOl/5iSnv+HhZz/eHyZ/2Vuj/9PXIL/GGWCD8K6OPIAAAAASUVORK5CYII=",
+      "alt": "Person about to touch the calm water",
+      "photographer": {
+        "name": "Yoann Boyer",
+        "username": "yoannboyer",
+        "url": "https://unsplash.com/@yoannboyer"
+      },
+      "photoUrl": "https://unsplash.com/photos/person-about-to-touch-the-calm-water-i14h2xyPr18",
+      "query": "hands in water",
+      "downloadTracked": true
+    },
+    "atelier-01": {
+      "slot": "atelier-01",
+      "id": "85-6iMn5L8g",
+      "raw": "https://images.unsplash.com/photo-1655111396188-8dd88ceb8b4d?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8amV3ZWxlciUyMHdvcmtzaG9wfGVufDF8fHx8MTc5MTQ0OTQ2M3ww&ixlib=rb-4.1.0",
+      "width": 3679,
+      "height": 5518,
+      "color": "#c0c0c0",
+      "blurHash": "LNKAyk%2Din4TztlR+Rk~q%1V?WB",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABYklEQVR4nAXB7U8ScQDA8d+f2ItetXjhWC9gK5o5pchSLyAevEtDjhPxAoI7OR7i4TqedKCAEQ4mDjfa6l/59vmIca/PdDRmuVrx+Pcfy9Wayc0Up9GmVKoirp02k8GQ+f09D+s/LJYrbgZjWjUb07AQjlWhb/9kNJkwnS+4/fWbvtOjalhk9SzC1M4o5wvYtk3v6pJup0PjokThNE3q+BiRkkKkZYV89huWZVIxv2NoKulYBFnaR8RevuLQ7+fkMErmNEEudYQe/8TJh23C2z5E2PWMiPcFyt47VDnIuSKRCfpJ+L2EfG6E8vwJXzwuEh+3OJMPyCkH5MI7aAEP8c0NhO55ir7lJhcJYKpRKlqM8tEe+eAbku+9iHpgg3rwNU31M04hRbeo0dYVal/3yUd3EMOYj2Fil+tiknGjyG3TYGRl6Ooy1aSEmCXfMtND3NV05r0fLPp1Zq0iQ1PFPo/zHxedE62ep2RjAAAAAElFTkSuQmCC",
+      "alt": "A person cutting a cake",
+      "photographer": {
+        "name": "Amy Vann",
+        "username": "girl_behindthelens",
+        "url": "https://unsplash.com/@girl_behindthelens"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-person-cutting-a-cake-85-6iMn5L8g",
+      "query": "jeweler workshop",
+      "downloadTracked": true
+    },
+    "atelier-02": {
+      "slot": "atelier-02",
+      "id": "T7Bthd1MCks",
+      "raw": "https://images.unsplash.com/photo-1655111379423-b85edc4da9ac?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8amV3ZWxlciUyMHdvcmtzaG9wfGVufDF8fHx8MTc5MTQ0OTQ2M3ww&ixlib=rb-4.1.0",
+      "width": 3774,
+      "height": 5661,
+      "color": "#d9d9d9",
+      "blurHash": "LnK1L8xuM{V??wo0V@Rjt7M{R*of",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABdUlEQVR4nAXBXUtacQDA4f8n6jK6abGLoJugQVeRUNBqVJNF9LK0WazWi9rLUCu3HTUTwbKOidroeEqPHtbhbLqdssj1SjD6FL89j1AzR+inZWrnNzzcP3N/+8SlVcM8+4WuVxBqJod+UuLCqnN394/bv4+cVy0M3UArmQg1naGsFrB+X1G/fuSqVufnD4OiWiCvaAg1JVM6zlM1/3BhXVMxqxQVhVzqkPRBFqEkExSzWYzyGaZRQTspkNlLkAiHiId2EN/jEfIHe2iKiqYWyaVk4l8CfPUuEvSsINKSn2wsxLEsc5Q6JLkt8c09w7rjHatTE4hd3zzJ4BpyNMx+NELM72HDNYzb3sWnoV5EZHGUqGeamM9LzLdCeMlJYMLG8kAbMz3tiIDDxsaHNwTnJpEWnEizdrbGOvEOtODqbkG47a14Rl6xNt7HpmOYkLMPabyDz4MvcHU3IT6+bmCuv5mloU58oz2E39vYnuzA//Yls7ZG/gM9yBUnJy7/CQAAAABJRU5ErkJggg==",
+      "alt": "A person holding a phone",
+      "photographer": {
+        "name": "Amy Vann",
+        "username": "girl_behindthelens",
+        "url": "https://unsplash.com/@girl_behindthelens"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-person-holding-a-phone-T7Bthd1MCks",
+      "query": "jeweler workshop",
+      "downloadTracked": true
+    },
+    "atelier-03": {
+      "slot": "atelier-03",
+      "id": "MLGkYWTZKDY",
+      "raw": "https://images.unsplash.com/photo-1781617783301-554c857fc7ea?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8OXx8amV3ZWxlciUyMHdvcmtzaG9wfGVufDF8fHx8MTc5MTQ0OTQ2M3ww&ixlib=rb-4.1.0",
+      "width": 6336,
+      "height": 9504,
+      "color": "#262626",
+      "blurHash": "LIEf7$oz4oD*~VRixaRlMxI=?at7",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABZ0lEQVR4nAXB7UsacQDA8R/0DxS960Uvo7YigugBFjGxhwk9kWGpq+3KiWVaN/OO9M6u8tTybJ6dKSdFSa2iYv/hd5+P0OV9ClmZupWlZZ/gFDNUtCOucwoPlo7IJvcwMzI3FY3b61NuLnUquoKdU7i71BDpWIQzNUmzekLbLdGq5flzluFKV2iYGcT+Zpjc7z3c2jkvD1XaroVdMihpCmU9jfixtIIaj9JyCny8NHhuO9SsPMZxGi11gFiemuFg5yeuU+TfW4vXv03sKxP1SCYeiyGmByb5FQ5Rr5q8v7o8PzWolM9JJOKEwluIT93DBFfXsC4MHtt17u9szLxGJLLNwrIf0SkGWfAtYeRUmvUyjl0ge3xIKBjAOzOHEB1DTHt8yIcJiqZO3lBJ7kr4F+fxTE0iRNcII19mkbYl0qkkqUQUaX2Fxa8TeMc/I0TPKH3jXvyBINEdicj3DQLfPPjG+pkb7eU/GMLeS+gjhQwAAAAASUVORK5CYII=",
+      "alt": "Man in cap crafting small items at a busy workbench",
+      "photographer": {
+        "name": "YiChuan Li",
+        "username": "liyichuan",
+        "url": "https://unsplash.com/@liyichuan"
+      },
+      "photoUrl": "https://unsplash.com/photos/man-in-cap-crafting-small-items-at-a-busy-workbench-MLGkYWTZKDY",
+      "query": "jeweler workshop",
+      "downloadTracked": true
+    },
+    "atelier-04": {
+      "slot": "atelier-04",
+      "id": "jfTb3fJIKYo",
+      "raw": "https://images.unsplash.com/photo-1621926184057-c5e1ba8d6f6b?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NHx8amV3ZWxlciUyMHdvcmtzaG9wfGVufDF8fHx8MTc5MTQ0OTQ2M3ww&ixlib=rb-4.1.0",
+      "width": 5616,
+      "height": 3744,
+      "color": "#8c7359",
+      "blurHash": "LEBf5{?GxFsS~At6R+S5X8s:RkNG",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAoUlEQVR4nAXBSQsBARiA4c+PUE4uSFIa0YxMtjKyDaPMoDlYSsa+xEE5SC62+Mev55HPrsf3MOB3dHnt+1y9Fge3yNLSWJka8tnavDc2j3WXm2dxHlXZO3lWLZVFPY085xb3qcnJNZh3cswaGRY1Fc9QmBRiyMUtc3RKDKtZTD2JmY5hp0LYySDNeADxKinGhka7qKOrGko0jOIXEj4hIsIfsU9NDHwCO6wAAAAASUVORK5CYII=",
+      "alt": "Person holding brown and white plastic pack",
+      "photographer": {
+        "name": "MedicAlert UK",
+        "username": "medicalertuk",
+        "url": "https://unsplash.com/@medicalertuk"
+      },
+      "photoUrl": "https://unsplash.com/photos/person-holding-brown-and-white-plastic-pack-jfTb3fJIKYo",
+      "query": "jeweler workshop",
+      "downloadTracked": true
+    }
+  }
+}

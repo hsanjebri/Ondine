@@ -1,0 +1,756 @@
+@import "tailwindcss";
+
+/* ───────────────────────────── Design tokens ───────────────────────────── */
+
+:root {
+  /* Palette */
+  --ivory: #f6f1ea;
+  --ivory-deep: #ede5d9;
+  --ink: #14110f;
+  --black: #0b0a09;
+  --gold: #b89b6a;
+  --gold-deep: #7d6538; /* gold text on ivory, AA 4.9:1 */
+  --gold-light: #d2bc8f;
+  --diamond: #dce6ee;
+
+  /* Semantic (ivory theme by default; `.theme-ink` inverts) */
+  --surface: var(--ivory);
+  --fg: var(--ink);
+  --muted: #6b645c; /* 5.2:1 on ivory */
+  --line: rgb(20 17 15 / 0.14);
+  --accent: var(--gold-deep);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-hover: 0.3s;
+  --dur-reveal: 1s;
+
+  /* Layout */
+  --gutter: clamp(1rem, 3.2vw, 3rem);
+  --header-h: 4.5rem;
+
+  /* Paper grain — tinted alpha noise, reads like 4% multiply on ivory */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .12 0 0 0 .3 -.11'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.theme-ink {
+  --surface: var(--black);
+  --fg: var(--ivory);
+  --muted: #9a938a; /* 6.5:1 on black */
+  --line: rgb(246 241 234 / 0.16);
+  --accent: var(--gold);
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-ivory-deep: var(--ivory-deep);
+  --color-ink: var(--ink);
+  --color-black: var(--black);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-light: var(--gold-light);
+  --color-diamond: var(--diamond);
+
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-manrope), "Manrope", system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+  --font-script: var(--font-script-face), "Mrs Saint Delafield", cursive;
+
+  --ease-ondine: var(--ease);
+  --spacing-gutter: var(--gutter);
+  --spacing-header: var(--header-h);
+}
+
+/* ─────────────────────────────── Base ─────────────────────────────── */
+
+@layer base {
+  html {
+    background: var(--black);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--ivory);
+    background-image: var(--grain);
+    background-size: 240px 240px;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--black);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  img,
+  video,
+  canvas {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+/* ───────────────────────────── Surfaces ───────────────────────────── */
+
+@utility paper {
+  background-color: var(--ivory);
+  background-image: var(--grain);
+  background-size: 240px 240px;
+  color: var(--ink);
+}
+
+@utility ink-surface {
+  background-color: var(--black);
+  background-image: none;
+  color: var(--ivory);
+}
+
+/* ──────────────────────────── Typography ──────────────────────────── */
+
+@utility display-xl {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(3.5rem, 11vw, 12.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.025em;
+}
+
+@utility display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(2.75rem, 7vw, 7.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+@utility heading {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(2.25rem, 4.6vw, 4.75rem);
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+}
+
+@utility subheading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.4vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+@utility lead {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.7vw, 1.65rem);
+  line-height: 1.35;
+}
+
+/* Letter-spaced uppercase micro-label (UI) */
+@utility micro {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Technical lowercase mono label (image corners, captions) */
+@utility mono {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.6875rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+
+/* Small caps for product names and prices */
+@utility smallcaps {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Widely spaced wordmark: M A I S O N   O N D I N E */
+@utility wordmark {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ───────────────────────────── Gold foil ───────────────────────────── */
+
+/*
+ * Gold gradient fill clipped to text, with a sheen layer on top.
+ * Add `.is-sheening` (in view or on hover) to sweep the light once.
+ */
+@utility foil {
+  --sheen: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgb(255 249 233 / 0.95) 49%,
+    rgb(255 249 233 / 0.95) 51%,
+    transparent 62%
+  );
+  --foil: linear-gradient(
+    100deg,
+    #6f5630 0%,
+    #a88a57 16%,
+    #e7d4a8 29%,
+    #b89b6a 41%,
+    #7d6538 57%,
+    #c9b07f 75%,
+    #8a6f40 100%
+  );
+  background-image: var(--sheen), var(--foil);
+  background-size: 260% 100%, 100% 100%;
+  background-position: 130% 0, 0 0;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.foil.is-sheening,
+.foil-hover:hover .foil,
+.foil.foil-hover:hover {
+  animation: foil-sheen 1.6s var(--ease) both;
+}
+
+@keyframes foil-sheen {
+  from {
+    background-position: 130% 0, 0 0;
+  }
+  to {
+    background-position: -30% 0, 0 0;
+  }
+}
+
+/* ───────────────────────────── Hairlines ───────────────────────────── */
+
+@utility hairline {
+  height: 1px;
+  width: 100%;
+  background: var(--line);
+}
+
+@utility hairline-v {
+  width: 1px;
+  height: 100%;
+  background: var(--line);
+}
+
+/* ───────────────────────────── Layout ───────────────────────────── */
+
+@utility shell {
+  width: 100%;
+  padding-inline: var(--gutter);
+  margin-inline: auto;
+  max-width: 120rem;
+}
+
+/* Editorial 12-column grid */
+@utility grid-editorial {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(0.75rem, 1.6vw, 1.75rem);
+}
+
+/* Masked line for text reveals */
+@utility line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+/* Link with a hairline that draws in on hover */
+@utility link-line {
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.2em;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--dur-hover) var(--ease);
+  }
+  &:hover::after,
+  &:focus-visible::after,
+  &[aria-current="page"]::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* ─────────────────────────── Custom cursor ─────────────────────────── */
+
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
+}
+
+html.has-cursor :is(input, textarea, select, [contenteditable="true"]) {
+  cursor: text !important;
+}
+
+/* ─────────────────────────── Lenis ─────────────────────────── */
+
+html.lenis-stopped {
+  overflow: clip;
+}
+
+/* ─────────────────────────── Reduced motion ─────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .foil.is-sheening,
+  .foil-hover:hover .foil,
+  .foil.foil-hover:hover {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html.scroll-locked {
+  overflow: clip;
+}
+
+/* Each cursor layer is its own fixed element so mix-blend-mode reaches the page. */
+.cursor-ring,
+.cursor-dot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+.cursor-dot {
+  z-index: 201;
+}
+
+.cursor-dot::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ivory);
+  transition: transform 0.3s var(--ease);
+}
+
+.cursor-dot[data-state="label"]::before,
+.cursor-dot[data-state="text"]::before {
+  transform: scale(0);
+}
+
+.cursor-ring__circle {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(246 241 234 / 0.75);
+  transition:
+    transform 0.5s var(--ease),
+    scale 0.25s var(--ease),
+    opacity 0.3s var(--ease),
+    background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.cursor-ring[data-state="link"] .cursor-ring__circle {
+  transform: scale(1.45);
+}
+
+.cursor-ring[data-state="text"] .cursor-ring__circle {
+  transform: scale(0.4);
+  opacity: 0;
+}
+
+.cursor-ring[data-state="label"] {
+  mix-blend-mode: normal;
+}
+
+.cursor-ring[data-state="label"] .cursor-ring__circle {
+  transform: scale(2.3);
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+.cursor-ring.is-pressed .cursor-ring__circle {
+  scale: 0.86;
+}
+
+.cursor-ring__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--black);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  transition:
+    opacity 0.3s var(--ease),
+    transform 0.45s var(--ease);
+}
+
+.cursor-ring[data-state="label"] .cursor-ring__label {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ─────────────────────────── Preloader ─────────────────────────── */
+
+.pl-mono path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: pl-draw 1.7s var(--ease) 0.15s forwards;
+}
+
+.pl-word {
+  animation: pl-fade 1.1s var(--ease) 0.85s both;
+}
+
+@keyframes pl-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pl-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-mono path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .pl-word {
+    animation: none;
+  }
+}
+
+/* ─────────────────────────── Buttons ─────────────────────────── */
+
+/* Solid: ink → a gold wash slides in from the left on hover */
+@utility btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0 1.75rem;
+  background: var(--fg);
+  color: var(--surface);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: color var(--dur-hover) var(--ease);
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s var(--ease);
+  }
+  &:hover::before,
+  &:focus-visible::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  &:hover,
+  &:focus-visible {
+    color: var(--black);
+  }
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+/* Hairline outline */
+@utility btn-ghost {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0 1.75rem;
+  border: 1px solid currentColor;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition:
+    background-color var(--dur-hover) var(--ease),
+    color var(--dur-hover) var(--ease);
+  &:hover,
+  &:focus-visible {
+    background-color: var(--fg);
+    color: var(--surface);
+  }
+}
+
+/* ─────────────────────────── Home ─────────────────────────── */
+
+/* Hero scroll cue: a hairline that fills, then drains downward */
+.hero-cue {
+  transform-origin: 50% 0%;
+  animation: hero-cue 2.6s var(--ease) infinite;
+}
+
+@keyframes hero-cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 50% 0%;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: 50% 0%;
+  }
+  50.1% {
+    transform: scaleY(1);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cue {
+    animation: none;
+    transform: scaleY(0.5);
+  }
+}
+
+/* Moodboard: placement from CSS vars (mobile first), shadow lift on hover/drag */
+.mb-fly {
+  left: var(--mx);
+  top: var(--my);
+  width: var(--mw);
+}
+
+@media (min-width: 768px) {
+  .mb-fly {
+    left: var(--x);
+    top: var(--y);
+    width: var(--w);
+  }
+}
+
+.mb-card {
+  transform-origin: 50% 50%;
+  will-change: transform;
+  box-shadow:
+    0 1px 2px rgb(20 17 15 / 0.12),
+    0 8px 18px -10px rgb(20 17 15 / 0.35);
+}
+
+.mb-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow:
+    0 34px 60px -22px rgb(20 17 15 / 0.5),
+    0 14px 26px -14px rgb(20 17 15 / 0.32);
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.mb-card.is-lifted::after {
+  opacity: 1;
+}
+
+/* Collections: dim the names that are not in view (desktop, JS only) */
+.cs-live .cs-item {
+  opacity: 0.25;
+  transition: opacity 0.7s var(--ease);
+}
+
+.cs-live .cs-item.is-active {
+  opacity: 1;
+}
+
+.cs-live .cs-plate {
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+}
+
+.cs-live .cs-plate.is-active {
+  opacity: 1;
+}
+
+/* Without JS the top (last) layer shows; keep only its caption */
+.cs-plate:not(:last-child) {
+  opacity: 0;
+}
+
+/* Signature carousel: native snap-scroll on touch, hidden scrollbar */
+.sp-viewport[data-mode="scroll"] {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.sp-viewport[data-mode="scroll"]::-webkit-scrollbar {
+  display: none;
+}
+
+.sp-viewport[data-mode="scroll"] .sp-track > li {
+  scroll-snap-align: start;
+  scroll-margin-left: var(--gutter);
+}
+
+.sp-viewport[data-mode="drag"] .sp-track {
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.sp-viewport[data-mode="drag"] img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* ─────────────────────────── Composer ─────────────────────────── */
+
+.composer-loading {
+  transform-origin: 0 50%;
+  animation: composer-loading 1.6s var(--ease) infinite;
+}
+
+@keyframes composer-loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Carat slider: hairline track, gold-ringed thumb */
+.carat-range {
+  appearance: none;
+  height: 2.25rem;
+  background: transparent;
+}
+
+.carat-range::-webkit-slider-runnable-track {
+  height: 1px;
+  background: var(--fg);
+}
+
+.carat-range::-moz-range-track {
+  height: 1px;
+  background: var(--fg);
+}
+
+.carat-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.75rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--fg);
+  box-shadow: inset 0 0 0 4px var(--surface), inset 0 0 0 12px var(--gold);
+  transition: transform var(--dur-hover) var(--ease);
+}
+
+.carat-range::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--fg);
+  box-shadow: inset 0 0 0 4px var(--surface), inset 0 0 0 12px var(--gold);
+}
+
+.carat-range:hover::-webkit-slider-thumb,
+.carat-range:active::-webkit-slider-thumb {
+  transform: scale(1.12);
+}
+
+.carat-range:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .composer-loading {
+    animation: none;
+  }
+}
