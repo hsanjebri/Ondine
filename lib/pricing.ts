@@ -1,22 +1,41 @@
-import type { BoxId, ClarityGrade, ColourGrade, MetalId, RingConfig, SettingId, ShapeId } from "./composer-options";
+import {
+  getDesign,
+  type BoxId,
+  type ClarityGrade,
+  type ColourGrade,
+  type Config,
+  type DesignId,
+  type MetalId,
+  type ShapeId,
+} from "./composer-options";
 
 /*
- * Ring composer pricing, in euros, all taxes included.
+ * Composer pricing, in euros, all taxes included.
  * Every number lives in this file so prices can change without touching a
  * component. Calibrated against Paris retail:
- *   0.50 ct round, G VS2, 18k gold solitaire   ≈ € 3,200
- *   2.00 ct round, D IF, platinum solitaire    > € 40,000
+ *   solitaire ring, 0.50 ct round G VS2, 18k yellow gold  ≈ € 3,200
+ *   solitaire ring, 2.00 ct round D IF, platinum           > € 40,000
+ *   tennis bracelet, 2.00 ct total G VS2, 18k white gold   ≈ € 6,000
  */
 
-/** Design and making of the setting (labour, head, gallery). */
-export const SETTING_BASE: Record<SettingId, number> = {
-  solitaire: 700,
-  halo: 1100,
-  trilogy: 950,
-  pave: 1050,
+/** Design and making (labour, findings, setting work), by design. */
+export const MAKING: Record<DesignId, number> = {
+  "ring-solitaire": 700,
+  "ring-halo": 1100,
+  "ring-pave": 1050,
+  "ring-eternity": 900,
+  "bracelet-tennis": 1400,
+  "bracelet-bangle": 1600,
+  "bracelet-cuff": 1900,
+  "necklace-pendant": 900,
+  "necklace-goutte": 1100,
+  "necklace-riviere": 2200,
+  "earrings-studs": 600,
+  "earrings-halo": 1000,
+  "earrings-hoops": 650,
 };
 
-/** Metal for band and head. */
+/** Metal for a solitaire ring's weight; scaled by each design's `weight`. */
 export const METAL_PRICE: Record<MetalId, number> = {
   yellow: 600,
   rose: 600,
@@ -24,7 +43,7 @@ export const METAL_PRICE: Record<MetalId, number> = {
   platinum: 1250,
 };
 
-/** Price per carat for a round G VS2, by weight bracket (lower bound in ct). */
+/** Price per carat for one round G VS2, by weight bracket (lower bound in ct). */
 export const PER_CARAT: Array<[minCarat: number, euros: number]> = [
   [0.3, 2600],
   [0.5, 3800],
@@ -35,6 +54,9 @@ export const PER_CARAT: Array<[minCarat: number, euros: number]> = [
   [2.0, 15000],
   [3.0, 19000],
 ];
+
+/** Small round brilliants (lines, pavé), per carat for G VS2. */
+export const LINE_PER_CARAT = 1900;
 
 export const COLOUR_FACTOR: Record<ColourGrade, number> = { D: 1.45, E: 1.3, F: 1.18, G: 1.0, H: 0.88 };
 
@@ -57,14 +79,11 @@ export const SHAPE_FACTOR: Record<ShapeId, number> = {
   cushion: 0.8,
 };
 
-/** Accent diamonds (F–G, VS), by setting. */
-export const ACCENTS = {
-  /** Halo stones scale with the circumference of the centre stone. */
-  halo: (carat: number) => 650 + 420 * Math.cbrt(carat),
-  /** Two side stones of a quarter of the centre weight each. */
-  trilogyRatio: 0.25,
-  pave: 1200,
-} as const;
+/** Small stones are less sensitive to grade: factors are softened by this exponent. */
+const LINE_GRADE_EXPONENT = 0.6;
+
+/** Accent diamonds of halo and pavé designs (F–G, VS), per centre stone. */
+export const ACCENTS = (carat: number) => 650 + 420 * Math.cbrt(carat);
 
 export const BOX_PRICE: Record<BoxId, number> = { leather: 0, velvet: 90, oak: 240 };
 
@@ -81,10 +100,15 @@ export function stonePrice(carat: number, shape: ShapeId, colour: ColourGrade, c
   return carat * perCarat(carat) * SHAPE_FACTOR[shape] * COLOUR_FACTOR[colour] * CLARITY_FACTOR[clarity];
 }
 
+export function linePrice(totalCarat: number, colour: ColourGrade, clarity: ClarityGrade) {
+  const grade = Math.pow(COLOUR_FACTOR[colour] * CLARITY_FACTOR[clarity], LINE_GRADE_EXPONENT);
+  return totalCarat * LINE_PER_CARAT * grade;
+}
+
 export interface PriceBreakdown {
-  setting: number;
+  making: number;
   metal: number;
-  stone: number;
+  stones: number;
   accents: number;
   box: number;
   total: number;
@@ -92,26 +116,22 @@ export interface PriceBreakdown {
 
 const round10 = (n: number) => Math.round(n / 10) * 10;
 
-export function priceRing(c: RingConfig): PriceBreakdown {
-  const setting = SETTING_BASE[c.setting];
-  const metal = METAL_PRICE[c.metal];
-  const stone = stonePrice(c.carat, c.shape, c.colour, c.clarity);
-  let accents = 0;
-  if (c.setting === "halo") accents = ACCENTS.halo(c.carat);
-  if (c.setting === "pave") accents = ACCENTS.pave;
-  if (c.setting === "trilogy") {
-    const side = c.carat * ACCENTS.trilogyRatio;
-    accents = 2 * stonePrice(side, "round", c.colour, c.clarity);
-  }
+export function price(c: Config): PriceBreakdown {
+  const d = getDesign(c.design);
+  const pair = c.piece === "earrings" ? 2 : 1;
+  const making = MAKING[c.design];
+  const metal = METAL_PRICE[c.metal] * d.weight;
+  let stones = 0;
+  if (d.stone === "centre") stones = pair * stonePrice(c.carat, c.shape, c.colour, c.clarity);
+  if (d.stone === "line") stones = linePrice(c.carat, c.colour, c.clarity);
+  const accents = d.accents && d.stone === "centre" ? pair * ACCENTS(c.carat) : 0;
   const box = BOX_PRICE[c.box];
-  const parts = { setting, metal, stone, accents, box };
-  const total = round10(setting + metal + stone + accents + box + ENGRAVING_PRICE);
   return {
-    setting: round10(parts.setting),
-    metal: round10(parts.metal),
-    stone: round10(parts.stone),
-    accents: round10(parts.accents),
-    box: parts.box,
-    total,
+    making: round10(making),
+    metal: round10(metal),
+    stones: round10(stones),
+    accents: round10(accents),
+    box,
+    total: round10(making + metal + stones + accents + box + ENGRAVING_PRICE),
   };
 }
