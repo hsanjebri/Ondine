@@ -687,17 +687,74 @@ html.scroll-locked {
 
 /* ─────────────────────────── Composer ─────────────────────────── */
 
-.composer-loading {
-  transform-origin: 0 50%;
-  animation: composer-loading 1.6s var(--ease) infinite;
+/* Photo stage: the piece floats, a sheen follows the pointer, facets sparkle */
+.stage-float {
+  animation: stage-float 7s ease-in-out infinite alternate;
 }
 
-@keyframes composer-loading {
-  0% {
-    transform: translateX(-100%);
+@keyframes stage-float {
+  from {
+    transform: translateY(0);
   }
+  to {
+    transform: translateY(-1.4%);
+  }
+}
+
+.stage-sheen {
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  background: radial-gradient(
+    38% 46% at var(--lx, 30%) var(--ly, 30%),
+    rgb(255 250 240 / 0.42),
+    rgb(255 250 240 / 0) 70%
+  );
+  mix-blend-mode: soft-light;
+}
+
+.stage-glint {
+  position: absolute;
+  width: clamp(14px, 3.2cqw, 34px);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 0.95) 0 6%, rgb(255 248 235 / 0.35) 14%, transparent 34%),
+    linear-gradient(90deg, transparent 0 46%, rgb(255 255 255 / 0.9) 50%, transparent 54% 100%) center / 100% 8% no-repeat,
+    linear-gradient(0deg, transparent 0 46%, rgb(255 255 255 / 0.9) 50%, transparent 54% 100%) center / 8% 100% no-repeat;
+  opacity: 0;
+  scale: 0.2;
+  rotate: 0deg;
+  animation: stage-glint 3.4s var(--ease) infinite;
+}
+
+@keyframes stage-glint {
+  0%,
+  62%,
   100% {
-    transform: translateX(100%);
+    opacity: 0;
+    scale: 0.2;
+    rotate: 0deg;
+  }
+  74% {
+    opacity: 1;
+    scale: 1;
+    rotate: 45deg;
+  }
+  86% {
+    opacity: 0;
+    scale: 0.4;
+    rotate: 70deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage-float,
+  .stage-glint {
+    animation: none;
   }
 }
 
@@ -747,10 +804,4 @@ html.scroll-locked {
 .carat-range:focus-visible {
   outline: 1px solid var(--accent);
   outline-offset: 4px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .composer-loading {
-    animation: none;
-  }
 }
