@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "@/lib/gsap";
 import { formatEuro } from "@/lib/format";
 import { prefersReducedMotion } from "@/lib/hooks";
-import { priceRing } from "@/lib/pricing";
+import { price as priceOf } from "@/lib/pricing";
 import { useComposer } from "@/store/composer";
 import { cn } from "@/lib/cn";
 
@@ -49,13 +49,13 @@ export function PriceBar() {
   const config = useComposer((s) => s.config);
   const step = useComposer((s) => s.step);
   const setStep = useComposer((s) => s.setStep);
-  const price = priceRing(config);
+  const price = priceOf(config);
 
   return (
     <div className="paper sticky bottom-0 z-10 border-t border-line">
       <div className="flex items-center justify-between gap-4 px-6 py-4 md:px-8">
         <div>
-          <p className="micro text-muted">Your ring</p>
+          <p className="micro text-muted">Your piece</p>
           <p className="font-serif text-[1.9rem] leading-none">
             <CountingPrice value={price.total} />
           </p>

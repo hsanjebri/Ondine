@@ -2,6 +2,7 @@
 
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
+import type { MetalId } from "@/lib/composer-options";
 
 export interface CartItem {
   /** Product slug, or `composed-<hash>` for a ring from the composer */
@@ -12,6 +13,11 @@ export interface CartItem {
   /** Short spec line, e.g. "18k yellow gold · 0.5 ct · size 52" */
   detail?: string;
   image?: string;
+  /** Cut-out shown as the thumbnail (key of data/cutouts.json), re-toned to `metal` */
+  cutout?: string;
+  metal?: MetalId | null;
+  /** Product page or composer link */
+  href?: string;
 }
 
 interface CartState {

@@ -1,0 +1,280 @@
+[
+  {
+    "id": "ring-solitaire",
+    "photo": "vAYIS8-XBR8",
+    "metal": "white",
+    "saturation": 0.22
+  },
+  {
+    "id": "ring-halo",
+    "photo": "CCpQ12CZ2Pc",
+    "metal": "white"
+  },
+  {
+    "id": "ring-pave",
+    "photo": "NhrcL_C0sFA",
+    "metal": "yellow"
+  },
+  {
+    "id": "ring-eternity",
+    "photo": "9FMSF5N65Yg",
+    "metal": "rose"
+  },
+  {
+    "id": "bracelet-tennis",
+    "photo": "2z7MxnXQs3k",
+    "metal": "white",
+    "alpha": [
+      150,
+      235
+    ]
+  },
+  {
+    "id": "bracelet-bangle",
+    "photo": "zaUWCo5XX5w",
+    "metal": "white",
+    "alpha": [
+      150,
+      235
+    ]
+  },
+  {
+    "id": "bracelet-cuff",
+    "photo": "hoC_u_9yJ_Y",
+    "metal": "yellow"
+  },
+  {
+    "id": "necklace-pendant",
+    "photo": "lbqW0O09RAM",
+    "metal": "white"
+  },
+  {
+    "id": "necklace-goutte",
+    "photo": "eq9OPZJH6yQ",
+    "metal": "white"
+  },
+  {
+    "id": "necklace-riviere",
+    "photo": "jm4cbOKYk30",
+    "metal": "white"
+  },
+  {
+    "id": "earrings-studs",
+    "photo": "dzA9vh4jGFE",
+    "metal": "rose"
+  },
+  {
+    "id": "earrings-halo",
+    "photo": "Lqfqsij4EvQ",
+    "metal": "white"
+  },
+  {
+    "id": "earrings-hoops",
+    "photo": "ZoIt11TZoso",
+    "metal": "yellow",
+    "crop": [
+      1310,
+      1300,
+      720,
+      490
+    ],
+    "whiteKey": 0.1
+  },
+  {
+    "id": "stone-round",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      920,
+      565,
+      290,
+      300
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "stone-oval",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      615,
+      420,
+      320,
+      255
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "stone-princess",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      1225,
+      560,
+      315,
+      310
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "stone-emerald",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      445,
+      595,
+      268,
+      245
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "stone-pear",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      1330,
+      300,
+      420,
+      295
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "stone-cushion",
+    "photo": "iqD7nCuYFVM",
+    "crop": [
+      1070,
+      812,
+      260,
+      255
+    ],
+    "max": 900,
+    "srcWidth": 7200,
+    "alpha": [
+      40,
+      200
+    ]
+  },
+  {
+    "id": "p-duo",
+    "photo": "ZWwC_6VfdAU",
+    "metal": "white"
+  },
+  {
+    "id": "p-princesse",
+    "photo": "9xJ5s00mCzY",
+    "metal": "white"
+  },
+  {
+    "id": "p-larme-ring",
+    "photo": "-w_1-mvkfUA",
+    "metal": "white"
+  },
+  {
+    "id": "p-trio",
+    "photo": "QA-yHvSFzOE",
+    "metal": "mixed"
+  },
+  {
+    "id": "p-rosee",
+    "photo": "OzAQyDsUltE",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-lune",
+    "photo": "Wcj6PVLiipQ",
+    "metal": "white"
+  },
+  {
+    "id": "p-coeur",
+    "photo": "ZoDgJpXzDB8",
+    "metal": "white"
+  },
+  {
+    "id": "p-amour",
+    "photo": "IefG_1rqOFU",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-perle-chain",
+    "photo": "nZg0QpDtWdo",
+    "metal": "white"
+  },
+  {
+    "id": "p-belle-epoque",
+    "photo": "GkTLP8m-qjI",
+    "metal": "white"
+  },
+  {
+    "id": "p-initiale",
+    "photo": "tB6cZcpfxMQ",
+    "metal": "white",
+    "crop": [
+      600,
+      0,
+      800,
+      1000
+    ]
+  },
+  {
+    "id": "p-baguette",
+    "photo": "LDgfWjbxQl8",
+    "metal": "white"
+  },
+  {
+    "id": "p-fleur",
+    "photo": "raFVu3MLap8",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-etoile",
+    "photo": "n6bbbc3Oc-w",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-noeud",
+    "photo": "rCr8vZS8j0Q",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-solene",
+    "photo": "AhIQL2CKq7g",
+    "metal": "white"
+  },
+  {
+    "id": "p-geometrie",
+    "photo": "IwLyt3yL8gc",
+    "metal": "yellow"
+  },
+  {
+    "id": "p-trois",
+    "photo": "d5qU27rehlk",
+    "metal": "white"
+  },
+  {
+    "id": "p-goutte-studs",
+    "photo": "gCPvxrmSeYg",
+    "metal": "white"
+  }
+]

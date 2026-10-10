@@ -20,6 +20,8 @@ export function Header() {
   const menuOpen = useUI((s) => s.menuOpen);
   const setMenuOpen = useUI((s) => s.setMenuOpen);
   const setBagOpen = useUI((s) => s.setBagOpen);
+  const pinned = useUI((s) => s.headerPinned);
+  const pulse = useUI((s) => s.bagPulse);
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
@@ -45,7 +47,7 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-[60] text-ivory mix-blend-difference transition-transform duration-700 ease-ondine",
-        hidden && !menuOpen && "-translate-y-full",
+        hidden && !menuOpen && !pinned && "-translate-y-full",
       )}
     >
       <div className="shell flex h-header items-center justify-between gap-6">
@@ -71,8 +73,14 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-6">
-          <button type="button" className="micro link-line" onClick={() => setBagOpen(true)}>
-            Bag <span className="tabular">({count})</span>
+          <button type="button" className="micro link-line" onClick={() => setBagOpen(true)} data-bag-target>
+            {/* Re-keyed on every landing so the bounce replays */}
+            <span key={pulse} className={cn("inline-block", pulse > 0 && "bag-bounce")}>
+              Bag{" "}
+              <span key={count} className={cn("tabular inline-block", pulse > 0 && "bag-count-pop")}>
+                ({count})
+              </span>
+            </span>
           </button>
           <button
             type="button"

@@ -2,7 +2,7 @@
 
 import { useRef, type KeyboardEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { STEPS, type StepId } from "@/lib/composer-options";
+import { stepsFor, type StepId } from "@/lib/composer-options";
 import { pad } from "@/lib/format";
 import { EASE } from "@/lib/motion";
 import { cn } from "@/lib/cn";
@@ -12,15 +12,18 @@ import { Summary } from "./Summary";
 import { PriceBar } from "./PriceBar";
 
 /**
- * The configuration panel: numbered steps (01 SETTING · 02 METAL …) as an
+ * The configuration panel: numbered steps (01 PIECE · 02 DESIGN …) as an
  * accessible tablist, the current step, Previous/Next, and the live price.
+ * Steps that do not apply to the piece (no size for earrings…) are left out.
  */
 export function Panel() {
   const step = useComposer((s) => s.step);
   const setStep = useComposer((s) => s.setStep);
   const reset = useComposer((s) => s.reset);
+  const config = useComposer((s) => s.config);
+  const STEPS = stepsFor(config);
   const tabs = useRef<Array<HTMLButtonElement | null>>([]);
-  const index = step === "summary" ? STEPS.length : STEPS.findIndex((s) => s.id === step);
+  const index = step === "summary" ? STEPS.length : Math.max(0, STEPS.findIndex((s) => s.id === step));
   const Current = step === "summary" ? Summary : STEP_COMPONENTS[step];
   const all: Array<{ id: StepId | "summary"; label: string }> = [...STEPS, { id: "summary", label: "Review" }];
 
@@ -40,16 +43,17 @@ export function Panel() {
   };
 
   return (
-    <section aria-label="Compose your ring" className="paper relative flex min-h-full flex-col">
+    <section aria-label="Compose your piece" className="paper relative flex min-h-full flex-col">
       <header className="px-6 pt-10 md:px-8 lg:pt-[calc(var(--header-h)+2.5rem)]">
         <p className="micro flex items-center gap-3">
           <span className="text-accent">06</span>
           <span aria-hidden className="h-px w-8 bg-current opacity-40" />
           <span>The composer</span>
         </p>
-        <h1 className="heading mt-5">Compose your ring</h1>
+        <h1 className="heading mt-5">Compose your piece</h1>
         <p className="mt-4 max-w-md text-muted">
-          Six choices, made in the atelier exactly as you set them. Every change shows on the ring and in the price.
+          A ring, a bracelet, a necklace or earrings, made in the atelier exactly as you set them. Every change shows on
+          the piece and in the price.
         </p>
       </header>
 
@@ -101,7 +105,7 @@ export function Panel() {
             transition={{ duration: 0.35, ease: EASE }}
           >
             <h2 className="subheading mb-8">
-              {step === "summary" ? "Your ring" : `${pad(index + 1)} — ${STEPS[index].label}`}
+              {step === "summary" ? "Your piece" : `${pad(index + 1)} — ${STEPS[index].label}`}
             </h2>
             <Current />
           </motion.div>

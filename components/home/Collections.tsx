@@ -29,7 +29,7 @@ export function Collections() {
           <p className="lead mt-6 text-fg">{c.line}</p>
           <p className="mt-5 max-w-md text-muted">{c.description}</p>
           <div className="mt-8 flex items-center gap-6">
-            <TransitionLink href="/#signature" className="micro link-line">
+            <TransitionLink href={`/jewellery?category=${c.id === "solitaires" || c.id === "bands" ? "rings" : c.id}`} className="micro link-line">
               See the pieces
             </TransitionLink>
             <span className="mono text-muted">

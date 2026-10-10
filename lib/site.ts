@@ -34,7 +34,7 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: "Collections", href: "/#collections" },
+  { label: "Jewellery", href: "/jewellery" },
   { label: "Composer", href: "/composer" },
   { label: "Atelier", href: "/#atelier" },
   { label: "Journal", href: "/#journal" },

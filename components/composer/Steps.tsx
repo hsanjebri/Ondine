@@ -1,137 +1,175 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element -- small transparent cut-outs used as option thumbnails */
 import { useId, useState } from "react";
+import cutouts from "@/data/cutouts.json";
 import {
   BOXES,
   CARAT,
   CLARITIES,
   COLOURS,
   ENGRAVING_MAX,
+  ENGRAVING_PLACE,
   METALS,
-  SETTINGS,
+  PIECES,
   SHAPES,
   SIZES,
-  type RingConfig,
-  type ShapeId,
+  designsFor,
+  getDesign,
+  type DesignId,
+  type MetalId,
 } from "@/lib/composer-options";
-import { BOX_PRICE, priceRing, stonePrice } from "@/lib/pricing";
+import { BOX_PRICE, linePrice, stonePrice } from "@/lib/pricing";
+import { Toned } from "./Toned";
 import { formatEuro } from "@/lib/format";
 import { useComposer } from "@/store/composer";
-import { OUTLINES } from "./three/geometry/gem";
 import { OptionGroup, Segmented } from "./Options";
 
+const CUT = cutouts as Record<string, { src: string }>;
 const useConfig = () => useComposer((s) => s.config);
 const useSet = () => useComposer((s) => s.set);
 
-/* ───────────────────────── 01 Setting ───────────────────────── */
-
-function SettingIcon({ id }: { id: (typeof SETTINGS)[number]["id"] }) {
+/** A cut-out on a small ink tile; pieces are shown in the chosen metal. */
+function Thumb({ design, metal, className }: { design: DesignId | `stone-${string}`; metal?: MetalId; className?: string }) {
   return (
-    <svg viewBox="0 0 48 40" className="h-10 w-12 text-fg" fill="none" stroke="currentColor" strokeWidth={1} aria-hidden>
-      <ellipse cx="24" cy="30" rx="15" ry="6" />
-      {id === "pave" ? [12, 16, 20, 28, 32, 36].map((x) => <circle key={x} cx={x} cy={x < 24 ? 33 : 33} r="1.1" />) : null}
-      {id === "trilogy" ? (
-        <>
-          <path d="M12 22 l3 -5 l3 5 l-3 3z" />
-          <path d="M30 22 l3 -5 l3 5 l-3 3z" />
-        </>
-      ) : null}
-      <path d="M19 18 l5 -9 l5 9 l-5 6z" />
-      {id === "halo" ? <ellipse cx="24" cy="17" rx="9" ry="3.5" strokeDasharray="1.4 1.4" /> : null}
-      <path d="M20 24 L22 18 M28 24 L26 18" />
-    </svg>
+    <span className={`flex aspect-[4/3] w-full items-center justify-center bg-[radial-gradient(90%_90%_at_50%_40%,#2a231e,#0b0a09)] p-3 ${className ?? ""}`}>
+      <span className="relative block h-full w-full [filter:drop-shadow(0_6px_8px_rgb(0_0_0/0.5))]">
+        {metal && !design.startsWith("stone-") ? (
+          <Toned design={design as DesignId} metal={metal} loading="lazy" />
+        ) : (
+          <img src={CUT[design].src} alt="" loading="lazy" draggable={false} className="absolute inset-0 h-full w-full object-contain" />
+        )}
+      </span>
+    </span>
   );
 }
 
-export function SettingStep() {
+/* ───────────────────────── Piece ───────────────────────── */
+
+export function PieceStep() {
   const c = useConfig();
   const set = useSet();
   return (
     <OptionGroup
-      name="setting"
-      legend="Choose the setting"
-      value={c.setting}
-      options={SETTINGS.map((s) => ({ id: s.id, label: s.label, note: s.note }))}
-      onChange={(v) => set("setting", v)}
-      render={(o, checked) => (
+      name="piece"
+      legend="What are we making?"
+      value={c.piece}
+      options={PIECES.map((p) => ({ id: p.id, label: p.label, note: p.note }))}
+      onChange={(v) => set("piece", v)}
+      render={(o) => (
         <>
-          <SettingIcon id={o.id} />
-          <span className="text-[0.95rem] font-medium">{o.label}</span>
+          <Thumb design={designsFor(o.id)[0].id} metal={c.metal} />
+          <span className="mt-1 text-[0.95rem] font-medium">{o.label}</span>
           <span className="text-sm leading-snug text-muted">{o.note}</span>
-          <span className="mono mt-auto text-muted">{checked ? "selected" : " "}</span>
         </>
       )}
     />
   );
 }
 
-/* ───────────────────────── 02 Metal ───────────────────────── */
+/* ───────────────────────── Design ───────────────────────── */
+
+export function DesignStep() {
+  const c = useConfig();
+  const set = useSet();
+  return (
+    <OptionGroup
+      name="design"
+      legend="Choose the design"
+      value={c.design}
+      options={designsFor(c.piece).map((d) => ({ id: d.id, label: d.label, note: d.note }))}
+      onChange={(v) => set("design", v)}
+      render={(o) => (
+        <>
+          <Thumb design={o.id} metal={c.metal} />
+          <span className="mt-1 text-[0.95rem] font-medium">{o.label}</span>
+          <span className="text-sm leading-snug text-muted">{o.note}</span>
+        </>
+      )}
+    />
+  );
+}
+
+/* ───────────────────────── Metal ───────────────────────── */
 
 export function MetalStep() {
   const c = useConfig();
   const set = useSet();
   return (
-    <OptionGroup
-      name="metal"
-      legend="Choose the metal"
-      value={c.metal}
-      options={METALS.map((m) => ({ id: m.id, label: m.label }))}
-      onChange={(v) => set("metal", v)}
-      render={(o) => {
-        const m = METALS.find((x) => x.id === o.id)!;
-        return (
-          <>
-            <span aria-hidden className="h-10 w-10 rounded-full shadow-[inset_0_0_0_1px_rgb(20_17_15/0.15)]" style={{ background: m.swatch }} />
-            <span className="text-[0.95rem] font-medium">{m.label}</span>
-            <span className="mono text-muted">{m.id === "platinum" ? "950 ‰, naturally white" : m.id === "white" ? "750 ‰, rhodium finish" : "750 ‰"}</span>
-          </>
-        );
-      }}
-    />
+    <div className="space-y-6">
+      <OptionGroup
+        name="metal"
+        legend="Choose the metal"
+        value={c.metal}
+        options={METALS.map((m) => ({ id: m.id, label: m.label }))}
+        onChange={(v) => set("metal", v)}
+        render={(o) => {
+          const m = METALS.find((x) => x.id === o.id)!;
+          return (
+            <>
+              <span aria-hidden className="h-10 w-10 rounded-full shadow-[inset_0_0_0_1px_rgb(20_17_15/0.15)]" style={{ background: m.swatch }} />
+              <span className="text-[0.95rem] font-medium">{m.label}</span>
+              <span className="mono text-muted">{m.note}</span>
+            </>
+          );
+        }}
+      />
+      <p className="text-sm text-muted">
+        The piece on the left is photographed in one metal and re-toned to show the others. In the atelier it is
+        made in the metal you choose.
+      </p>
+    </div>
   );
 }
 
-/* ───────────────────────── 03 Stone ───────────────────────── */
-
-function ShapeIcon({ shape }: { shape: ShapeId }) {
-  const d = Array.from({ length: 72 }, (_, i) => {
-    const [x, z] = OUTLINES[shape]((i / 72) * Math.PI * 2);
-    return `${(20 + z * 11).toFixed(2)},${(20 - x * 11).toFixed(2)}`;
-  });
-  return (
-    <svg viewBox="0 0 40 40" className="mx-auto h-9 w-9" aria-hidden>
-      <path d={`M${d.join("L")}Z`} fill="none" stroke="currentColor" strokeWidth={1} />
-      <path d={`M${d.filter((_, i) => i % 9 === 0).join("L")}Z`} fill="none" stroke="currentColor" strokeWidth={0.5} opacity={0.5} />
-    </svg>
-  );
-}
+/* ───────────────────────── Stone ───────────────────────── */
 
 export function StoneStep() {
   const c = useConfig();
   const set = useSet();
   const caratId = useId();
-  const stone = stonePrice(c.carat, c.shape, c.colour, c.clarity);
+  const d = getDesign(c.design);
+  if (d.stone === "none") return null;
+  const range = CARAT[d.stone];
+  const pair = c.piece === "earrings";
+  const stones =
+    d.stone === "line"
+      ? linePrice(c.carat, c.colour, c.clarity)
+      : (pair ? 2 : 1) * stonePrice(c.carat, c.shape, c.colour, c.clarity);
+  const ticks = d.stone === "line" ? [0.5, 2, 4, 6, 8] : [0.3, 1, 2, 3];
+
   return (
     <div className="space-y-10">
-      <OptionGroup
-        name="shape"
-        legend="Shape"
-        value={c.shape}
-        columns={3}
-        options={SHAPES.map((s) => ({ id: s.id, label: s.label }))}
-        onChange={(v) => set("shape", v)}
-        render={(o) => (
-          <span className="flex flex-col items-center gap-2 py-1 text-center">
-            <ShapeIcon shape={o.id} />
-            <span className="text-sm">{o.label}</span>
-          </span>
-        )}
-      />
+      {d.stone === "centre" ? (
+        <p className="text-sm text-muted">
+          The photograph shows the design. Your own stone is drawn beside it, to scale against a 10 mm rule.
+        </p>
+      ) : null}
+      {d.stone === "centre" ? (
+        <OptionGroup
+          name="shape"
+          legend="Shape"
+          value={c.shape}
+          columns={3}
+          options={SHAPES.map((s) => ({ id: s.id, label: s.label }))}
+          onChange={(v) => set("shape", v)}
+          render={(o) => (
+            <span className="flex flex-col items-center gap-2 text-center">
+              <Thumb design={`stone-${o.id}`} className="aspect-square" />
+              <span className="text-sm">{o.label}</span>
+            </span>
+          )}
+        />
+      ) : (
+        <p className="border-l-2 border-accent pl-4 text-sm text-muted">
+          A line of round brilliants, matched by hand for colour and size. Choose the total weight and the grade.
+        </p>
+      )}
 
       <div>
         <div className="mb-3 flex items-baseline justify-between">
           <label htmlFor={caratId} className="micro text-muted">
-            Carat weight
+            {d.stone === "line" ? "Total weight" : pair ? "Weight, each stone" : "Carat weight"}
           </label>
           <output htmlFor={caratId} className="font-serif text-3xl leading-none tabular">
             {c.carat.toFixed(2)} <span className="mono text-muted">ct</span>
@@ -140,9 +178,9 @@ export function StoneStep() {
         <input
           id={caratId}
           type="range"
-          min={CARAT.min}
-          max={CARAT.max}
-          step={CARAT.step}
+          min={range.min}
+          max={range.max}
+          step={range.step}
           value={c.carat}
           onChange={(e) => set("carat", Number(e.target.value))}
           className="carat-range w-full"
@@ -150,129 +188,117 @@ export function StoneStep() {
           data-cursor="drag"
         />
         <div className="mono mt-2 flex justify-between text-muted" aria-hidden>
-          <span>0.30</span>
-          <span>1.00</span>
-          <span>2.00</span>
-          <span>3.00</span>
+          {ticks.map((t) => (
+            <span key={t}>{t.toFixed(2)}</span>
+          ))}
         </div>
       </div>
 
-      <Segmented
-        name="colour"
-        legend="Colour"
-        value={c.colour}
-        options={COLOURS}
-        onChange={(v) => set("colour", v)}
-        hint="d is colourless"
-      />
-      <Segmented
-        name="clarity"
-        legend="Clarity"
-        value={c.clarity}
-        options={CLARITIES}
-        onChange={(v) => set("clarity", v)}
-        hint="if is flawless under 10×"
-      />
+      <Segmented name="colour" legend="Colour" value={c.colour} options={COLOURS} onChange={(v) => set("colour", v)} hint="d is colourless" />
+      <Segmented name="clarity" legend="Clarity" value={c.clarity} options={CLARITIES} onChange={(v) => set("clarity", v)} hint="if is flawless under 10×" />
 
       <p className="flex items-baseline justify-between border-t border-line pt-4 text-sm text-muted">
-        <span>
-          The stone alone, {c.carat.toFixed(2)} ct {c.colour} {c.clarity}
-        </span>
-        <span className="smallcaps tabular text-fg">{formatEuro(Math.round(stone / 10) * 10)}</span>
+        <span>{d.stone === "line" ? "The diamonds" : pair ? "The pair of stones" : "The stone alone"}</span>
+        <span className="smallcaps tabular text-fg">{formatEuro(Math.round(stones / 10) * 10)}</span>
       </p>
     </div>
   );
 }
 
-/* ───────────────────────── 04 Size ───────────────────────── */
+/* ───────────────────────── Size ───────────────────────── */
 
 export function SizeStep() {
   const c = useConfig();
   const set = useSet();
   const [helper, setHelper] = useState(false);
   const [mm, setMm] = useState("");
-  const measured = Number(mm.replace(",", "."));
-  const suggestion = Number.isFinite(measured) && measured >= 40 && measured <= 70
-    ? Math.min(62, Math.max(46, Math.round(measured)))
-    : null;
   const helperId = useId();
+  const sizes = SIZES[c.piece];
+  const ring = c.piece === "ring";
+  const measured = Number(mm.replace(",", "."));
+  const suggestion = Number.isFinite(measured) && measured >= 40 && measured <= 70 ? Math.min(62, Math.max(46, Math.round(measured))) : null;
 
   return (
     <div className="space-y-8">
       <OptionGroup
         name="size"
-        legend="EU size (inner circumference, mm)"
+        legend={ring ? "EU size (inner circumference, mm)" : `${sizes.label} (${sizes.unit})`}
         value={c.size}
-        columns={6}
-        options={SIZES.map((s) => ({ id: s, label: String(s) }))}
+        columns={ring ? 6 : 3}
+        options={sizes.values.map((s) => ({ id: s, label: ring ? String(s) : `${s} cm` }))}
         onChange={(v) => set("size", v)}
         render={(o) => <span className="smallcaps block py-1 text-center tabular">{o.label}</span>}
       />
 
-      {c.size === null ? (
+      {ring && c.size === null ? (
         <p className="border-l-2 border-accent pl-4 text-sm text-muted">
           We will post you a ring sizer with your order confirmation, and confirm the size before the ring is made.
         </p>
       ) : null}
 
-      <div className="border-t border-line pt-6">
-        <button
-          type="button"
-          className="micro link-line"
-          aria-expanded={helper}
-          aria-controls={helperId}
-          onClick={() => setHelper((v) => !v)}
-        >
-          I don&apos;t know my size
-        </button>
-        <div id={helperId} hidden={!helper} className="mt-6 space-y-6 text-sm text-muted">
-          <div>
-            <p className="text-fg">Measure at home</p>
-            <p className="mt-2">
-              Wrap a thin strip of paper around the base of the finger, mark where it meets, and measure the length in
-              millimetres. In Europe, that length is the size.
-            </p>
-            <div className="mt-4 flex flex-wrap items-center gap-3">
-              <label className="sr-only" htmlFor={`${helperId}-mm`}>
-                Circumference in millimetres
-              </label>
-              <input
-                id={`${helperId}-mm`}
-                inputMode="decimal"
-                placeholder="e.g. 52.5"
-                value={mm}
-                onChange={(e) => setMm(e.target.value)}
-                className="h-11 w-32 border border-line bg-transparent px-3 text-fg placeholder:text-muted/70 focus:border-fg focus:outline-none"
-              />
-              <span className="mono">mm</span>
-              {suggestion ? (
-                <button type="button" className="btn-ghost min-h-11 px-4" onClick={() => set("size", suggestion)}>
-                  Use size {suggestion}
-                </button>
-              ) : null}
+      {ring ? (
+        <div className="border-t border-line pt-6">
+          <button type="button" className="micro link-line" aria-expanded={helper} aria-controls={helperId} onClick={() => setHelper((v) => !v)}>
+            I don&apos;t know my size
+          </button>
+          <div id={helperId} hidden={!helper} className="mt-6 space-y-6 text-sm text-muted">
+            <div>
+              <p className="text-fg">Measure at home</p>
+              <p className="mt-2">
+                Wrap a thin strip of paper around the base of the finger, mark where it meets, and measure the length in
+                millimetres. In Europe, that length is the size.
+              </p>
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <label className="sr-only" htmlFor={`${helperId}-mm`}>
+                  Circumference in millimetres
+                </label>
+                <input
+                  id={`${helperId}-mm`}
+                  inputMode="decimal"
+                  placeholder="e.g. 52.5"
+                  value={mm}
+                  onChange={(e) => setMm(e.target.value)}
+                  className="h-11 w-32 border border-line bg-transparent px-3 text-fg placeholder:text-muted/70 focus:border-fg focus:outline-none"
+                />
+                <span className="mono">mm</span>
+                {suggestion ? (
+                  <button type="button" className="btn-ghost min-h-11 px-4" onClick={() => set("size", suggestion)}>
+                    Use size {suggestion}
+                  </button>
+                ) : null}
+              </div>
+            </div>
+            <div>
+              <p className="text-fg">Or let us help</p>
+              <p className="mt-2">We post a ring sizer with the order, and resizing is complimentary within 60 days.</p>
+              <button type="button" className="micro link-line mt-3 text-fg" onClick={() => set("size", null)}>
+                Send me a ring sizer
+              </button>
             </div>
           </div>
-          <div>
-            <p className="text-fg">Or let us help</p>
-            <p className="mt-2">We post a ring sizer with the order, and resizing is complimentary within 60 days.</p>
-            <button type="button" className="micro link-line mt-3 text-fg" onClick={() => set("size", null)}>
-              Send me a ring sizer
-            </button>
-          </div>
         </div>
-      </div>
+      ) : (
+        <p className="text-sm text-muted">
+          {c.piece === "bracelet"
+            ? "Measure the wrist just above the bone and add one centimetre for a comfortable fit."
+            : "42 cm sits at the base of the neck; 45 cm falls just below the collarbone."}{" "}
+          Adjustments are complimentary within 60 days.
+        </p>
+      )}
     </div>
   );
 }
 
-/* ───────────────────────── 05 Engraving ───────────────────────── */
+/* ───────────────────────── Engraving ───────────────────────── */
 
 export function EngravingStep() {
   const c = useConfig();
   const set = useSet();
   const id = useId();
+  const place = ENGRAVING_PLACE[c.piece];
   const metal = METALS.find((m) => m.id === c.metal)!;
-  const text = c.engraving || "Your words, inside the band";
+  if (!place) return null;
+  const text = c.engraving || `Your words, ${place}`;
 
   return (
     <div className="space-y-8">
@@ -290,16 +316,16 @@ export function EngravingStep() {
           type="text"
           maxLength={ENGRAVING_MAX}
           value={c.engraving}
-          onChange={(e) => set("engraving", e.target.value.slice(0, ENGRAVING_MAX))}
+          onChange={(e) => set("engraving", e.target.value)}
           placeholder="A date, initials, a word"
           className="h-12 w-full border border-line bg-transparent px-4 font-serif text-xl text-fg italic placeholder:text-muted/70 placeholder:not-italic focus:border-fg focus:outline-none"
           autoComplete="off"
         />
-        <p className="mt-2 text-sm text-muted">Engraved by hand inside the band. Complimentary.</p>
+        <p className="mt-2 text-sm text-muted">Engraved by hand {place}. Complimentary.</p>
       </div>
 
       <figure>
-        <figcaption className="mono mb-3 text-muted">preview — inside the band</figcaption>
+        <figcaption className="mono mb-3 text-muted">preview — {place}</figcaption>
         <svg viewBox="0 0 520 120" className="w-full" role="img" aria-label={`Engraving preview: ${c.engraving || "empty"}`}>
           <defs>
             <linearGradient id="engrave-metal" x1="0" y1="0" x2="0" y2="1">
@@ -314,18 +340,17 @@ export function EngravingStep() {
               <stop offset="0.82" stopColor="#000" stopOpacity={0} />
               <stop offset="1" stopColor="#000" stopOpacity={0.55} />
             </linearGradient>
-            <path id="engrave-arc" d="M40 78 Q260 52 480 78" />
+            <path id="engrave-arc" d={c.piece === "ring" ? "M40 78 Q260 52 480 78" : "M40 70 L480 70"} />
           </defs>
-          <path d="M20 40 Q260 8 500 40 L500 92 Q260 64 20 92 Z" fill="url(#engrave-metal)" />
-          <path d="M20 40 Q260 8 500 40 L500 92 Q260 64 20 92 Z" fill="url(#engrave-fade)" />
-          <text
-            fontFamily="var(--font-cormorant), serif"
-            fontStyle="italic"
-            fontSize="26"
-            fill="#000"
-            fillOpacity={c.engraving ? 0.55 : 0.28}
-            letterSpacing="1"
-          >
+          {c.piece === "ring" ? (
+            <>
+              <path d="M20 40 Q260 8 500 40 L500 92 Q260 64 20 92 Z" fill="url(#engrave-metal)" />
+              <path d="M20 40 Q260 8 500 40 L500 92 Q260 64 20 92 Z" fill="url(#engrave-fade)" />
+            </>
+          ) : (
+            <rect x="20" y="34" width="480" height="56" rx="10" fill="url(#engrave-metal)" />
+          )}
+          <text fontFamily="var(--font-cormorant), serif" fontStyle="italic" fontSize="26" fill="#000" fillOpacity={c.engraving ? 0.55 : 0.28} letterSpacing="1">
             <textPath href="#engrave-arc" startOffset="50%" textAnchor="middle">
               {text}
             </textPath>
@@ -336,7 +361,7 @@ export function EngravingStep() {
   );
 }
 
-/* ───────────────────────── 06 Box ───────────────────────── */
+/* ───────────────────────── Box ───────────────────────── */
 
 function BoxArt({ id }: { id: (typeof BOXES)[number]["id"] }) {
   const styles = {
@@ -378,14 +403,11 @@ export function BoxStep() {
 }
 
 export const STEP_COMPONENTS = {
-  setting: SettingStep,
+  piece: PieceStep,
+  design: DesignStep,
   metal: MetalStep,
   stone: StoneStep,
   size: SizeStep,
   engraving: EngravingStep,
   box: BoxStep,
 } as const;
-
-export function priceOf(c: RingConfig) {
-  return priceRing(c);
-}
