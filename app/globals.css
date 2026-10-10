@@ -805,3 +805,101 @@ html.scroll-locked {
   outline: 1px solid var(--accent);
   outline-offset: 4px;
 }
+
+
+/* ─────────────────────────── Fly to bag ─────────────────────────── */
+
+.fly-item {
+  position: fixed;
+  z-index: 250;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 18px 24px rgb(0 0 0 / 0.45)) drop-shadow(0 0 18px rgb(232 207 160 / 0.35));
+}
+
+.fly-spark {
+  position: fixed;
+  z-index: 249;
+  width: var(--s, 5px);
+  height: var(--s, 5px);
+  margin: calc(var(--s, 5px) / -2) 0 0 calc(var(--s, 5px) / -2);
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, #fff7e6 0 30%, #e8cfa0 55%, rgb(184 155 106 / 0) 72%);
+  box-shadow: 0 0 8px rgb(232 207 160 / 0.8);
+  animation: fly-spark 0.7s var(--ease) forwards;
+}
+
+.fly-spark--burst {
+  animation-duration: 0.6s;
+}
+
+@keyframes fly-spark {
+  to {
+    transform: translate(var(--dx, 0), var(--dy, 0)) scale(0);
+    opacity: 0;
+  }
+}
+
+.fly-burst {
+  position: fixed;
+  z-index: 249;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1px solid #e8cfa0;
+  animation: fly-burst 0.6s var(--ease) forwards;
+}
+
+@keyframes fly-burst {
+  to {
+    transform: scale(5.5);
+    opacity: 0;
+    border-width: 0.3px;
+  }
+}
+
+/* The Bag button catches the piece: a squash-and-stretch bounce, the count pops */
+.bag-bounce {
+  animation: bag-bounce 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bag-bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.32, 0.82) translateY(2px);
+  }
+  55% {
+    transform: scale(0.92, 1.12) translateY(-3px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bag-count-pop {
+  animation: bag-count-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bag-count-pop {
+  0% {
+    transform: translateY(-60%) scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bag-bounce,
+  .bag-count-pop {
+    animation: none;
+  }
+}
