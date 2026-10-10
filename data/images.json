@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:29:48.811Z",
+  "generatedAt": "2026-10-10T09:53:59.473Z",
   "source": "unsplash",
   "slots": {
     "ring-01": {
@@ -608,6 +608,633 @@
       },
       "photoUrl": "https://unsplash.com/photos/person-holding-brown-and-white-plastic-pack-jfTb3fJIKYo",
       "query": "jeweler workshop",
+      "downloadTracked": true
+    },
+    "cut-ring-solitaire": {
+      "slot": "cut-ring-solitaire",
+      "id": "vAYIS8-XBR8",
+      "raw": "https://images.unsplash.com/photo-1768423838972-05fba2faca38?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mjd8fHNvbGl0YWlyZSUyMGVuZ2FnZW1lbnQlMjByaW5nfGVufDF8fHx8MTc5MTQ1MTcxNXww&ixlib=rb-4.1.0",
+      "width": 3024,
+      "height": 3024,
+      "color": "#73a6a6",
+      "blurHash": "LCDnh5ITcEay4Tx^WBaypIofR5WB",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA40lEQVR4nBXLbUvCUABA4fs3owg0y6XRohqSVtIrpczdu7u7tko2bWtjVpZQQv24E344354j1rRiI/DZCgOaq4xmWyvqWlLTCrEe+GyugNE0jY+lFTu+pKEVDaMRtYeAeri6JE05YtdzaSmPttG04whhPUVYscHSHi13yJ474EBJjuKI4yRB2Okz9jhmP/SxpcuhHNEJDb004bwoEE6W4EzHOOOYThzSfYzopwlXZcnNfI44KV/oFlNO8wn9bMLla8ZtVXH/+cXwe4nozXLOZjkXbwXX7xV38w8GiwXuzxLv949/CzyqAiTWRhcAAAAASUVORK5CYII=",
+      "alt": "A diamond engagement ring on a teal background",
+      "photographer": {
+        "name": "David Sykes",
+        "username": "proposalringuk",
+        "url": "https://unsplash.com/@proposalringuk"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-diamond-engagement-ring-on-a-teal-background-vAYIS8-XBR8",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-ring-halo": {
+      "slot": "cut-ring-halo",
+      "id": "CCpQ12CZ2Pc",
+      "raw": "https://images.unsplash.com/photo-1591209627710-d2427565a41f?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NHx8c29saXRhaXJlJTIwZW5nYWdlbWVudCUyMHJpbmd8ZW58MXx8fHwxNzkxNDUxNzE1fDA&ixlib=rb-4.1.0",
+      "width": 4197,
+      "height": 2798,
+      "color": "#f3f3f3",
+      "blurHash": "LEQ]+wof~qof-;ayWBfk~qay4nj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAcUlEQVR4nB2NOwoAIRBDvf/RthCL7RWtXBV/4B+yjEXyJjAk7JyDvTfmnBhjXNG91rpiZL135JzhnIO1Ft57lFLQWgMjSylBa433fcE5v6QcYwSrtSKEACklhBB4nueSMjXdh5wS7PfBGAOl1CVNUcMP7eKVyAtG3IIAAAAASUVORK5CYII=",
+      "alt": "Silver diamond studded ring with blue gemstone",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-studded-ring-with-blue-gemstone-CCpQ12CZ2Pc",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-ring-pave": {
+      "slot": "cut-ring-pave",
+      "id": "NhrcL_C0sFA",
+      "raw": "https://images.unsplash.com/photo-1598560917807-1bae44bd2be8?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8c29saXRhaXJlJTIwZW5nYWdlbWVudCUyMHJpbmd8ZW58MXx8fHwxNzkxNDUxNzE1fDA&ixlib=rb-4.1.0",
+      "width": 3731,
+      "height": 3732,
+      "color": "#d9d9d9",
+      "blurHash": "LDPj7Bog?dxt?bj]WBWAx_axMwa~",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAwUlEQVR4nAXBW3KDIABAUfa/qPajSafTWEfxgYog8pJosobbc8T7fHOVixwzwXtCcKTkKTnxzAXxOl+c5SSFyO4su1uJ3pJToKQDcT1PSs74zWKWgXWWODMQ95UcAuI8DnLw2EWhugdK3tHjL24dCM4iSopEt6FHSVffkNUHSt4wc8NuNCJ5z24NU9/QVl+0j0/G9o5WDVbPiLB7nDGoXtLWP7T1N2NXoacesywIv3m21aKGAdn+0ckaNXboeWKdNf8/DOS5FNlohAAAAABJRU5ErkJggg==",
+      "alt": "Gold ring on white surface",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-ring-on-white-surface-NhrcL_C0sFA",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-ring-eternity": {
+      "slot": "cut-ring-eternity",
+      "id": "9FMSF5N65Yg",
+      "raw": "https://images.unsplash.com/photo-1591210244853-ea68b6126edf?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8M3x8ZGlhbW9uZCUyMHJpbmd8ZW58MXx8fHdoaXRlfDE3OTE1NDAyOTh8MA&ixlib=rb-4.1.0",
+      "width": 3901,
+      "height": 2601,
+      "color": "#f3f3f3",
+      "blurHash": "LYRfOWDNROV@R4I9MxWBx^jEROof",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAmUlEQVR4nAXByQ7BQACA4XlqL+AF3JzFReImcXCwxMF1mohd0G0srakuRrXa3/cJ2W2wHrTwrClp4PMrCuoaqgrKskRYvSbrYRtXjon8IybWfE3G92MocoNYjTrsZn1sOeF2lITOFq3OJKHCZBHCtua4ywVqL7lfNgTOgac6Ez+vmPcLob0DkX8ieihirUnilHdmMHnO51fwBzGhkZucAgfcAAAAAElFTkSuQmCC",
+      "alt": "Gold and silver diamond ring",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-and-silver-diamond-ring-9FMSF5N65Yg",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-bracelet-tennis": {
+      "slot": "cut-bracelet-tennis",
+      "id": "2z7MxnXQs3k",
+      "raw": "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8dGVubmlzJTIwYnJhY2VsZXR8ZW58MXx8fHwxNzkxNTQwMzAwfDA&ixlib=rb-4.1.0",
+      "width": 4724,
+      "height": 3149,
+      "color": "#d9d9d9",
+      "blurHash": "LHPjDUofj[j[-;ofayay~qayayj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAT0lEQVR4nG3DTQ7AEBAG0Ln/4Yy/7ugOY4ce4GtI2LQvefSMgX30fvbWVqoimKWUs+S85pRAl/fYvXOrs/YkozUMMzQzWKlPumPEHEP4/QI1fpAJGXABugAAAABJRU5ErkJggg==",
+      "alt": "Gold and silver link bracelet",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-and-silver-link-bracelet-2z7MxnXQs3k",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-bracelet-bangle": {
+      "slot": "cut-bracelet-bangle",
+      "id": "zaUWCo5XX5w",
+      "raw": "https://images.unsplash.com/photo-1728381064552-493ea8e66926?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjR8fHRlbm5pcyUyMGJyYWNlbGV0fGVufDF8fHx8MTc5MTU0MDMwMHww&ixlib=rb-4.1.0",
+      "width": 3640,
+      "height": 3640,
+      "color": "#f3f3f3",
+      "blurHash": "LFSs4~t7xut7xuj[WBfP_4fQRjj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAeUlEQVR4nI2P2wrEMAgF/f8/7ZKksUnM1Z4SF/q6KwyojIqEH0F/CDdUF+Yc6L0ZY/QX6l1Qa0HODOZgXNeJlNh6JJIsidHD+wPOHQjhgxgdmD2otYIt7anzdAjBmfzdEkFrTbtfq6CUbIgUtFaN9wvVG3MuQ1Wt3jxZuvnNZMhbCQAAAABJRU5ErkJggg==",
+      "alt": "A white gold and diamond ring",
+      "photographer": {
+        "name": "Sanjay Jain",
+        "username": "manojornaments__12",
+        "url": "https://unsplash.com/@manojornaments__12"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-white-gold-and-diamond-ring-zaUWCo5XX5w",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-bracelet-cuff": {
+      "slot": "cut-bracelet-cuff",
+      "id": "hoC_u_9yJ_Y",
+      "raw": "https://images.unsplash.com/photo-1602751584581-2e0372975b46?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NHx8ZGlhbW9uZCUyMHJpbmd8ZW58MXx8fHdoaXRlfDE3OTE1NDAyOTh8MA&ixlib=rb-4.1.0",
+      "width": 8481,
+      "height": 6336,
+      "color": "#f3f3f3",
+      "blurHash": "LERMh[t7_Na}9YR*t8t7x]WB9Fog",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAlklEQVR4nCXK2xKCIABAQf7/+2qmtFJSEkRE8IJa06mpfV7h5oCNPU33oNYlSku0VbTeYINFDGnETf4X7uqGrC6oRmKcposOsTwTMUWMbSjKjDw/UhRndKsI04B4vnfSNuNciywvZKcDt+sJ0yqmNP7DtidC9JhGUckCVUtcb1nWGbG9NtZ9ZVkmYvQMvcP7njgG5m/4AHiGtIJASlfZAAAAAElFTkSuQmCC",
+      "alt": "Gold and silver ring on white surface",
+      "photographer": {
+        "name": "Philippe Van Doninck",
+        "username": "phillekes",
+        "url": "https://unsplash.com/@phillekes"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-and-silver-ring-on-white-surface-hoC_u_9yJ_Y",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-necklace-pendant": {
+      "slot": "cut-necklace-pendant",
+      "id": "lbqW0O09RAM",
+      "raw": "https://images.unsplash.com/photo-1598560917505-59a3ad559071?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTJ8fGRpYW1vbmQlMjBuZWNrbGFjZXxlbnwxfHx8fDE3OTE0NTE3MTZ8MA&ixlib=rb-4.1.0",
+      "width": 4000,
+      "height": 4000,
+      "color": "#c0c0c0",
+      "blurHash": "LGMQx3oe~qt6_3j[D%WBM{ayoej[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAw0lEQVR4nF3O22qDQACE4X3/29CLlAYhpYcQWolBTGzUPWiMh6obbfo4f3GhFHo58DEz4vY1MtqBpqrJtUFLSZEb2rrG9j3i+x9QmaQwv2CYwcR4tTRVhZYKmabkWrn8B6ylKkuyJOEUx6gsdXmYwW0a3dZce4wiwn3Ax/HAOTd0bYeYrpaubUhPCf7bO9vNK/ud76bmX8L2n1SXkigMeVo/4q1WbF6eiQ8R56JAdG3t6na+z8PynrvFgrXnEQYBRml+AMQA0Qs69vqRAAAAAElFTkSuQmCC",
+      "alt": "Silver diamond studded heart pendant necklace",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-studded-heart-pendant-necklace-lbqW0O09RAM",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-necklace-goutte": {
+      "slot": "cut-necklace-goutte",
+      "id": "eq9OPZJH6yQ",
+      "raw": "https://images.unsplash.com/photo-1589128530085-7e772389eb7a?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8cGVuZGFudCUyMG5lY2tsYWNlfGVufDF8fHx3aGl0ZXwxNzkxNTQwMzAwfDA&ixlib=rb-4.1.0",
+      "width": 5282,
+      "height": 3521,
+      "color": "#f3f3f3",
+      "blurHash": "L3Ryvqt7_4oexuRjfRV@%MWBRjj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAUUlEQVR4nDVNSQ4AMQjy/49tXdu5MUHTC0RkkawPWRceB+YJtYB5IKJaF0IkDdVPNW/mTV0IkZPealhbm59JJn1aWHsM5JmqN/EavNNk3mz4AYkAmYI2fZcuAAAAAElFTkSuQmCC",
+      "alt": "Silver necklace with heart pendant",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-necklace-with-heart-pendant-eq9OPZJH6yQ",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-necklace-riviere": {
+      "slot": "cut-necklace-riviere",
+      "id": "jm4cbOKYk30",
+      "raw": "https://images.unsplash.com/photo-1663568675454-ecd65012d8f0?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTh8fGRpYW1vbmQlMjBuZWNrbGFjZXxlbnwxfHx8fDE3OTE0NTE3MTZ8MA&ixlib=rb-4.1.0",
+      "width": 3000,
+      "height": 3000,
+      "color": "#f3f3f3",
+      "blurHash": "L9Ryvot7xuxuxuj[ayfQ~qj[M{ay",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAgElEQVR4nD2OWQ7EIAxDc/+DDpRC2bvRyiNHoh+PGGwM8rwvxvPgum/lHuPjvC4IBY3jPLEfh04ahHvh0npHqRUpZ+RSVE+EBzEl+BCwOAe3rqrDtilCk4LmzxgYa78gEdZuMWL1HnZZ1KRmC5H5PpsYJLw0kfl7BmtrOvu+K9R/Fnb1RgW5M4AAAAAASUVORK5CYII=",
+      "alt": "Shape, arrow",
+      "photographer": {
+        "name": "parikh je",
+        "username": "parikhje",
+        "url": "https://unsplash.com/@parikhje"
+      },
+      "photoUrl": "https://unsplash.com/photos/shape-arrow-jm4cbOKYk30",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-earrings-studs": {
+      "slot": "cut-earrings-studs",
+      "id": "dzA9vh4jGFE",
+      "raw": "https://images.unsplash.com/photo-1727946029833-487c53b80a81?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTJ8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 3248,
+      "height": 3248,
+      "color": "#d9d9d9",
+      "blurHash": "LFOf}ws.x^jF%MkCWBae%%f+R4oz",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAv0lEQVR4nCXK0VKEIABAUf7/k2pna7V0SwQWEFBBmzbLv7iN9XDmvlzxkXfWvLPknXKYd8r0Qxm/yWlDrNPGMm2U8Ys53Znj579w9I7Iw8LsC6ObiCYQekfoPVEnkiuIpANReYZOY5srpqox1Qv2Khl0QARpGTqDbd/Ql2fk4wP96YSuG5y0x+AYuhu27VBVjTw/0Z8v6Nd3rHSIaEaCirjOYa4K3Uh0q7h1DqcSIvmVaBe8mbFq/OP0jDcZbwq/rVDeQMLYr1wAAAAASUVORK5CYII=",
+      "alt": "A pair of diamond earrings on a white background",
+      "photographer": {
+        "name": "Sanjay Jain",
+        "username": "manojornaments__12",
+        "url": "https://unsplash.com/@manojornaments__12"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-pair-of-diamond-earrings-on-a-white-background-dzA9vh4jGFE",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-earrings-halo": {
+      "slot": "cut-earrings-halo",
+      "id": "Lqfqsij4EvQ",
+      "raw": "https://images.unsplash.com/photo-1588444650733-d0767b753fc8?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8ZGlhbW9uZCUyMHN0dWRzfGVufDF8fHx8MTc5MTU0MDMwMXww&ixlib=rb-4.1.0",
+      "width": 4605,
+      "height": 2976,
+      "color": "#f3f3f3",
+      "blurHash": "LEQJiwj[?bofoffQj[ay~qWB9Fj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAbElEQVR4nE2M3Q5AMBSD9/7PRmy48ndhZn/G8ACVc0Tiomn6pa3I5w3SkS/Wl8/rdZH2jC0dcD5iMRZ6WWFWxzluO4QPkUE/TJCqRVFKqLpF149cFt+SgFQNirKC/Bfonq6sCwxmbXhAwxATHtxwk0nZUcWLAAAAAElFTkSuQmCC",
+      "alt": "Silver and diamond studded ring",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-and-diamond-studded-ring-Lqfqsij4EvQ",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-earrings-hoops": {
+      "slot": "cut-earrings-hoops",
+      "id": "ZoIt11TZoso",
+      "raw": "https://images.unsplash.com/photo-1594823204889-68bcbb0e549e?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8Z29sZCUyMGhvb3AlMjBlYXJyaW5nc3xlbnwxfHx8d2hpdGV8MTc5MTU0MDMwMXww&ixlib=rb-4.1.0",
+      "width": 4000,
+      "height": 5340,
+      "color": "#f3f3f3",
+      "blurHash": "LMO3@98^%h.8?aavRPIAg2odt8xv",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAABJUlEQVR4nCXKy07CQABA0fl5t8aVC2Mi0cQQYwi+LRAErExLa2mnHQrTFw/BQvQbrgvP+ojSKBZ6Quh3CSYvpInDel1Q7w/Uh19EsQiZJy6h1yVwX//DKqfe76n3PwijfWbRmKnTJZAWMyVZVobdbsf39wGhQ4ny3/n86PBpd9BTSZmnfG02bLc1IvLfCeQbk4GFN7BQ3gfZPGG1rFivvhCBO8Kz+4w7z0jrmel4xEJHVEVOVa4QvmvjjPoMH+8Z3rXxhn3SOCTPM3JTIAJ/ghwN6LZusZrXjHsWOg7Jsox5ahCRUkjb5ql5TfvijOHLA0kcYfIcreeIJDU40qF91aB5ekzvsUWcKExRouIZIs0qXNfjtnHO5ckR1t0NsY4x5ZJQaf4AkIYqlOJnGacAAAAASUVORK5CYII=",
+      "alt": "Red berries on white ceramic plate",
+      "photographer": {
+        "name": "Nataliya Melnychuk",
+        "username": "natinati",
+        "url": "https://unsplash.com/@natinati"
+      },
+      "photoUrl": "https://unsplash.com/photos/red-berries-on-white-ceramic-plate-ZoIt11TZoso",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-stones": {
+      "slot": "cut-stones",
+      "id": "iqD7nCuYFVM",
+      "raw": "https://images.unsplash.com/photo-1750767323874-5946ad2c7e91?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTR8fGxvb3NlJTIwZGlhbW9uZHxlbnwxfHx8fDE3OTE1NDAyOTl8MA&ixlib=rb-4.1.0",
+      "width": 8192,
+      "height": 5464,
+      "color": "#262626",
+      "blurHash": "L97nON%M00Ri-;ofIUay00M{-;t7",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAmUlEQVR4nB2OOwuCcBwAf2CDBX2EiIaIKI1MQoNehD3/Uga5Fj6gwKmiofCzX+hwyy13IiIUDIwxm7VCqSPLxZJmo1V6qWo6va6JrwJu14Q4SgkvIa4zQaSGuI6LOvg87hnfb87vl5NlGcHpjNm3EXtks/a2RFHK6/nh9XyTxAm77Z5O2ywyxUMFo2czm3os5iusoYWu1cuHP4mbQ8stEi7BAAAAAElFTkSuQmCC",
+      "alt": "Diamonds of various shapes are on a black surface",
+      "photographer": {
+        "name": "PRAHANT STUDIO",
+        "username": "prahantstudio",
+        "url": "https://unsplash.com/@prahantstudio"
+      },
+      "photoUrl": "https://unsplash.com/photos/diamonds-of-various-shapes-are-on-a-black-surface-iqD7nCuYFVM",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-duo": {
+      "slot": "cut-p-duo",
+      "id": "ZWwC_6VfdAU",
+      "raw": "https://images.unsplash.com/photo-1591209608777-fb022eac7112?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8OHx8c29saXRhaXJlJTIwZW5nYWdlbWVudCUyMHJpbmd8ZW58MXx8fHwxNzkxNDUxNzE1fDA&ixlib=rb-4.1.0",
+      "width": 2997,
+      "height": 1998,
+      "color": "#f3f3f3",
+      "blurHash": "L9RC[6of?bt7_3j@j@fR~qay9Fay",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAcUlEQVR4nD3MSwoEIQwEUO9/RXFEaWy/jaK0xk0NZmAWITwqFbH3xt4EIsJaizfR/lvMOfG+L3rvqLXytNbYYwyIg+d5cN83jDHQWsNaC+89SikQJ0wp4bouKKUgpYTWH3YI4XeQc2acL845bscYufgFOYGW+Q/kRN4AAAAASUVORK5CYII=",
+      "alt": "Silver diamond studded ring on white surface",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-studded-ring-on-white-surface-ZWwC_6VfdAU",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-princesse": {
+      "slot": "cut-p-princesse",
+      "id": "9xJ5s00mCzY",
+      "raw": "https://images.unsplash.com/photo-1595370239057-4f721a8bb505?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTR8fHNvbGl0YWlyZSUyMGVuZ2FnZW1lbnQlMjByaW5nfGVufDF8fHx8MTc5MTQ1MTcxNXww&ixlib=rb-4.1.0",
+      "width": 3766,
+      "height": 2511,
+      "color": "#f3f3f3",
+      "blurHash": "LDR3TVt7_4t7?bj[WBfQ~qay4na|",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAf0lEQVR4nB3HSw6CMABAwd7/ai5QUyJhA4aSCNKWQkD6wWfsYhYjzvNLSicxBmL0pPQX8r0PiBASx+FZ1wVrJ4x5M88mf9t2xL5/cM6hVEdVlUh5pa4f+VobxLKsaK1p2wYpbxTFhbK854/jiHBuxVrLMLxQ6knXNfR9lz9Nmh8qVJZWIDIn4gAAAABJRU5ErkJggg==",
+      "alt": "Silver diamond studded ring on white surface",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-diamond-studded-ring-on-white-surface-9xJ5s00mCzY",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-larme-ring": {
+      "slot": "cut-p-larme-ring",
+      "id": "-w_1-mvkfUA",
+      "raw": "https://images.unsplash.com/photo-1548649551-34b3862657b3?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjN8fHNvbGl0YWlyZSUyMGVuZ2FnZW1lbnQlMjByaW5nfGVufDF8fHx8MTc5MTQ1MTcxNXww&ixlib=rb-4.1.0",
+      "width": 6015,
+      "height": 3074,
+      "color": "#d9f3f3",
+      "blurHash": "L6PG]ZMdD5H@-;t7MxofD5bF4Tof",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAa0lEQVR4nB3JWQ6CMBRA0e5/dZqQau0g0KKvIwEXcE34OF9H3W+GSXtsFNZ+EMePOe/YRdA2oh52xbw3/Lcx9+MS8sB9Km6rKJfKlaEOQt9xpWOl4ctgGSdqes5oFzFJcNKwUjEpY6LwSoU/IjR1ILKJq3kAAAAASUVORK5CYII=",
+      "alt": "Silver-colored ring",
+      "photographer": {
+        "name": "Ryan Pouncy",
+        "username": "pixelperfect",
+        "url": "https://unsplash.com/@pixelperfect"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-colored-ring--w_1-mvkfUA",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-trio": {
+      "slot": "cut-p-trio",
+      "id": "QA-yHvSFzOE",
+      "raw": "https://images.unsplash.com/photo-1717605877844-b506a1f5b914?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTJ8fGRpYW1vbmQlMjByaW5nfGVufDF8fHx3aGl0ZXwxNzkxNTQwMjk4fDA&ixlib=rb-4.1.0",
+      "width": 3456,
+      "height": 5184,
+      "color": "#d9d9d9",
+      "blurHash": "LCOp_Y%Nt8xv?dxut5t74:xvROs.",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABCUlEQVR4nCXLwVKDMACE4bz/Y3lQnNJCoARISEIISamjaPsCvyMevsPO7oqQHrhlR9mNZky0OnPVmaYPlHJELPmBizu93Wh1OsrOZNph4dxqRLw9mddvRrfRmRVlEv2UUToilUWs25Ml7UzzxjBFRruiXWa0CaUDIt0fxLzjwg1jF4yLWJ+xc8a4FZG2H2L+xIeEdTPWBdy84kPGhYyI+Ytl/cDPC5N1B+sXXEjHSfh4P5aT82hjDsZ6JhcOQruV0QZ6PaGG4dBr85/1hOhGz3WwNGqg7jrkH9Uju56q7RD11XBpR8qm4yQbyqY9nOqG4nxBlHLgVCuKquWtkhS15L2SvJYXXop3fgGbqFa/YhTaoAAAAABJRU5ErkJggg==",
+      "alt": "A couple of rings sitting on top of a white sheet",
+      "photographer": {
+        "name": "Diego Castañeda",
+        "username": "disfruta_cafe",
+        "url": "https://unsplash.com/@disfruta_cafe"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-couple-of-rings-sitting-on-top-of-a-white-sheet-QA-yHvSFzOE",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-rosee": {
+      "slot": "cut-p-rosee",
+      "id": "OzAQyDsUltE",
+      "raw": "https://images.unsplash.com/photo-1602751584547-5fb8e6c21740?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8ZGlhbW9uZCUyMHJpbmd8ZW58MXx8fHdoaXRlfDE3OTE1NDAyOTh8MA&ixlib=rb-4.1.0",
+      "width": 5016,
+      "height": 3366,
+      "color": "#f3f3f3",
+      "blurHash": "L5R3cv-;.Tx]%MjaWVbH.Taz8^o0",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAb0lEQVR4nCWLOxbDIAzAuP81WyBgY/NL2k19SScNkkK/vvTzg68Tn/vPdWJrI2MSxh3sCxsTNUfNUO9oH0gfhHHfcyOq5BRJ8U0+MkUEMSc891xUEVKKxPeLlBNHFWozgj/BRqxTtFFEH1GbU5rzAwBQl2m0MU6HAAAAAElFTkSuQmCC",
+      "alt": "Gold and black ring on white surface",
+      "photographer": {
+        "name": "Philippe Van Doninck",
+        "username": "phillekes",
+        "url": "https://unsplash.com/@phillekes"
+      },
+      "photoUrl": "https://unsplash.com/photos/gold-and-black-ring-on-white-surface-OzAQyDsUltE",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-lune": {
+      "slot": "cut-p-lune",
+      "id": "Wcj6PVLiipQ",
+      "raw": "https://images.unsplash.com/photo-1705854937134-dd130d90df5d?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8NXx8ZGlhbW9uZCUyMHJpbmd8ZW58MXx8fHdoaXRlfDE3OTE1NDAyOTh8MA&ixlib=rb-4.1.0",
+      "width": 8621,
+      "height": 6936,
+      "color": "#f3f3f3",
+      "blurHash": "LYO43coJ4obHt7f6Rij[00fkfkay",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAtElEQVR4nBXMTQvBcADA4f+3d3JSkpPDKDYk4eL9rU32VrKJbcxBYrRRFPWT5wM8Ip1Okc9naDVlFtoQ21ZRtRGNpkI2l0EUpQL1WpnZtIfrmATBGse1mEz7KNUyQlPn2NaS8LAlic+8Xnfi5MI+9DBMHbFxHQJ/xy068f08gDef75Pr7Yzn7/6DhmXqBL5LdA1JkhOX6Ijnb9ANAyFJJaqKzKDfwTTGrFZzlvqIbq9NpSLzAw0sozeitU9kAAAAAElFTkSuQmCC",
+      "alt": "A silver ring sitting on top of a white surface",
+      "photographer": {
+        "name": "Peaky Frames",
+        "username": "rashedpaykary",
+        "url": "https://unsplash.com/@rashedpaykary"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-silver-ring-sitting-on-top-of-a-white-surface-Wcj6PVLiipQ",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-coeur": {
+      "slot": "cut-p-coeur",
+      "id": "ZoDgJpXzDB8",
+      "raw": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Nnx8ZGlhbW9uZCUyMG5lY2tsYWNlfGVufDF8fHx8MTc5MTQ1MTcxNnww&ixlib=rb-4.1.0",
+      "width": 4969,
+      "height": 3313,
+      "color": "#f3f3f3",
+      "blurHash": "L2RfnLog_4%MD$RjM{WB?cWB9Eof",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAU0lEQVR4nEWOSxKAMAxCc/+r2nzb0SUOUeuCBfDIRCInPKjaYvbkBfkA84RawDzgkRuWrNU0y2Noa6i9YEFqniDECywIqHl7DmWuC4RozP8fOKJuG6mYci+uBWgAAAAASUVORK5CYII=",
+      "alt": "Silver heart pendant necklace on white background",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-heart-pendant-necklace-on-white-background-ZoDgJpXzDB8",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-amour": {
+      "slot": "cut-p-amour",
+      "id": "IefG_1rqOFU",
+      "raw": "https://images.unsplash.com/photo-1643300866907-032b3baeeb1f?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MXx8cGVuZGFudCUyMG5lY2tsYWNlfGVufDF8fHx3aGl0ZXwxNzkxNTQwMzAwfDA&ixlib=rb-4.1.0",
+      "width": 5568,
+      "height": 3712,
+      "color": "#f3f3f3",
+      "blurHash": "LBS6Md%g.TRNx_j]WAof%hRiITt8",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAeklEQVR4nB3Myw6CMBBA0f7/N7rQBAhCpYU+ZqYFrtH1SY7rQL/BTlC90GpIUUQaYjfuh+0CbRe1KHk/SDGSU6ZKx7XzxFqnVmXfAn4eWKcXwb/JueCsGWpKyYX4WVnHJ8vwYFtG0pFw2hQxodZCioHoZ8IysW/+P3wBDAGaLyU3QckAAAAASUVORK5CYII=",
+      "alt": "A gold necklace with a heart shaped pendant",
+      "photographer": {
+        "name": "Gabriel Mihalcea",
+        "username": "lovelyscape",
+        "url": "https://unsplash.com/@lovelyscape"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-gold-necklace-with-a-heart-shaped-pendant-IefG_1rqOFU",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-perle-chain": {
+      "slot": "cut-p-perle-chain",
+      "id": "nZg0QpDtWdo",
+      "raw": "https://images.unsplash.com/photo-1658729565278-7c09292d7184?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8N3x8cGVuZGFudCUyMG5lY2tsYWNlfGVufDF8fHx3aGl0ZXwxNzkxNTQwMzAwfDA&ixlib=rb-4.1.0",
+      "width": 4160,
+      "height": 6240,
+      "color": "#f3f3f3",
+      "blurHash": "L2S$u@-pp0-;t7WUM{WB0zf5ITWU",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAhUlEQVR4nHXQSxLEIAgEUO9/4IzSND0FwXwWWbBQnhb0WE5lTXjVfaYOc43lcYH1BE79EhhD1iiBOav2o+EhoVA2TgA2AjUoqVADuMvJ69EISQydlw/gjEJDkhJ9gmzG/gEfgHsGQFboHrS3UE+N96q5RTUZ1ZiGd1jooDLN2WBHnpVJ/gEk1XsC9097zAAAAABJRU5ErkJggg==",
+      "alt": "A necklace with a pendant",
+      "photographer": {
+        "name": "Taylor Heery",
+        "username": "taylorheeryphoto",
+        "url": "https://unsplash.com/@taylorheeryphoto"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-necklace-with-a-pendant-nZg0QpDtWdo",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-belle-epoque": {
+      "slot": "cut-p-belle-epoque",
+      "id": "GkTLP8m-qjI",
+      "raw": "https://images.unsplash.com/photo-1719862056514-0cdacd9142b5?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjR8fGRpYW1vbmQlMjBuZWNrbGFjZXxlbnwxfHx8fDE3OTE0NTE3MTZ8MA&ixlib=rb-4.1.0",
+      "width": 2680,
+      "height": 4394,
+      "color": "#8c8c8c",
+      "blurHash": "L45q^eWB02oetSjs-oWBRPj[ozay",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABGElEQVR4nEXNa0+CYADF8WerrdtmzXKRGiCB10R4AOMiIAgafP/v829oqxfnxdn5bUfoQ52pYeE6a6LYI00Dolie+9xaILQ/YBPHPmm2JU48pGsz64A61LE64Nokuy15EbJLAzxvcwFjRcU0TKTckOYhZZWQ7UP8wGXaAWUwxph8ID2HvIipThnFISHYSkxzhug/vaFpE6TvnIdTk3Ood2y/JIZhIW5vnhmN3pGeTXmI+W731McOuKjqBCHEHS+DVxx3RXmIaNuM+pgQBBsUZdQBwcN9D3s9pSwC2iahrkJ8ueSx17+ALp8LnSJzaY8hdekjNxZX4vofLK0hRbKmqXyq3MFZafxuFzA3BuyjBU3pUKWf2PPzPz8USI+IwAC2pQAAAABJRU5ErkJggg==",
+      "alt": "Diamond and pearl necklace with intricate pendant",
+      "photographer": {
+        "name": "The Cleveland Museum of Art",
+        "username": "clevelandart",
+        "url": "https://unsplash.com/@clevelandart"
+      },
+      "photoUrl": "https://unsplash.com/photos/diamond-and-pearl-necklace-with-intricate-pendant-GkTLP8m-qjI",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-initiale": {
+      "slot": "cut-p-initiale",
+      "id": "tB6cZcpfxMQ",
+      "raw": "https://images.unsplash.com/photo-1611012916032-68e4d87901e5?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Nnx8cGVuZGFudCUyMG5lY2tsYWNlfGVufDF8fHx3aGl0ZXwxNzkxNTQwMzAwfDA&ixlib=rb-4.1.0",
+      "width": 5760,
+      "height": 3840,
+      "color": "#f3f3f3",
+      "blurHash": "L5Rp8+?wwdxV?IM_M_%htQxaxus;",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAa0lEQVR4nC2MQQ4CMQwD+/+HAkvTNE63FE6DtnCwLNljl897sdZkjEQZ5EjOczBSRDfKek3mPMkUUmy/4FQn3Chj6F+KUGxI4Xvt9qRIfYch0RV4b3h70uyg1eP3cEmZuDrmlVrv1HrD7MEXV5yYeI35NQYAAAAASUVORK5CYII=",
+      "alt": "Silver key chain on white textile",
+      "photographer": {
+        "name": "Laura Ohlman",
+        "username": "ohlmanphotography",
+        "url": "https://unsplash.com/@ohlmanphotography"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-key-chain-on-white-textile-tB6cZcpfxMQ",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-baguette": {
+      "slot": "cut-p-baguette",
+      "id": "LDgfWjbxQl8",
+      "raw": "https://images.unsplash.com/photo-1589422370452-07bbc090f2c0?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MTN8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 4290,
+      "height": 2844,
+      "color": "#d9d9d9",
+      "blurHash": "L8P6~y4n?bWBROj[RQa{_4RjD%of",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAd0lEQVR4nB2NWxKDIBDAuP/dSguj7PLQBVF7jHTsR/6SictSyFoopdHahllnjIM5T67zxqkokh4EEUE1U2vFzJjHxKW0si4LMQS893j/IoQPqoLZjnuqlBIxRrx//6UQIjlneu+4Urf/X3NFtKBaaW1njMl1f/kBqiyNnHhCMcYAAAAASUVORK5CYII=",
+      "alt": "Silver and white tube on white surface",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-and-white-tube-on-white-surface-LDgfWjbxQl8",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-fleur": {
+      "slot": "cut-p-fleur",
+      "id": "raFVu3MLap8",
+      "raw": "https://images.unsplash.com/photo-1638734205377-f21045bf6ebe?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjV8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 5184,
+      "height": 3456,
+      "color": "#c0c0c0",
+      "blurHash": "LDK-ay4Tozog9aRkV@aekWt7MxRj",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAjElEQVR4nA3KSQ6CMABA0d4/caFGEIxQAmEqWKRlDATHc3196yf8w46rsyeRPmUZo5uS1tRYq+l6jQjdA9I7koQuRRpwq1JMWzH0DdPUIoroQi7PpMGJXDroLGS4K9bZsG0DoikkOrtSx2dusYdVEUtX81x7Pq8ZYVSEVZKukow6YbGKx2x4byPff/gBGiR4JIiTxpkAAAAASUVORK5CYII=",
+      "alt": "A pair of diamond earrings on a white background",
+      "photographer": {
+        "name": "Mares Stefan",
+        "username": "stefanmares",
+        "url": "https://unsplash.com/@stefanmares"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-pair-of-diamond-earrings-on-a-white-background-raFVu3MLap8",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-etoile": {
+      "slot": "cut-p-etoile",
+      "id": "n6bbbc3Oc-w",
+      "raw": "https://images.unsplash.com/photo-1769151591224-2eee6793b885?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mjh8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 3147,
+      "height": 3148,
+      "color": "#c0c0c0",
+      "blurHash": "L6M@l+_4.9-;H=xv-pxbtnMxMwof",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAqElEQVR4nC3OUQ6DIBREUfa/qBZ4PECkKIpNXc1trP2dnGSu2bcPSxvEOGOd4nxENaMx40Ux4wLLIKYLBJwLhJBQTXgJmDFO1nWQUsFZj7UO8UKQgPeCGcfJ2g9yLnjncM8H4izi/Q32P5im+R7t8wYi90U/TpbtTZkbqhGVgKr+GkQTZtlPWn9TaifnSs4zuVTSVAm5Ytr2oV7gtTPN/QdL25heHS0rX05a1pjw8V2TAAAAAElFTkSuQmCC",
+      "alt": "Delicate hexagonal diamond stud earrings on white background",
+      "photographer": {
+        "name": "Bench Lewish",
+        "username": "earsdecor",
+        "url": "https://unsplash.com/@earsdecor"
+      },
+      "photoUrl": "https://unsplash.com/photos/delicate-hexagonal-diamond-stud-earrings-on-white-background-n6bbbc3Oc-w",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-noeud": {
+      "slot": "cut-p-noeud",
+      "id": "rCr8vZS8j0Q",
+      "raw": "https://images.unsplash.com/photo-1704445344761-8717f11c55ee?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8OHx8Z29sZCUyMGhvb3AlMjBlYXJyaW5nc3xlbnwxfHx8d2hpdGV8MTc5MTU0MDMwMXww&ixlib=rb-4.1.0",
+      "width": 4480,
+      "height": 5600,
+      "color": "#f3f3f3",
+      "blurHash": "LGPjGZxu_NMx00NF9FIU0JM{M{-;",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAYAAACJxx+AAAABAUlEQVR4nB3PXZOBYABA4ff//6JdGkWNGiR9sK+QaqKlrKWMysXZWVfn5rk5oj/6RNF7DAwFTe+jaZ9o6gdDXUG3dIQ2HjA0VQxriGFq6COFkdbDMFTMmYmYLabMPRs3cHAWUyaWjqmrTCdjvKWH2O5Cov2OJNmz26zxHRvbGuO7DnESI86nE2VZcLmU5FlGuAzw7Rlb+UVRFIi6qnjUNf8tT99EUiJdlzSKqO53RNe2tE3zBuc8f4Mw8DmkCfWjRrxeHU3z5PpzIU32hKuAzSrgkCXcqhuie7XUj4pjniFlQODZhNIny2KKa4Fouie/9ytRvH1vOnOLtfRIs4hjeeQP9awccb4GKb4AAAAASUVORK5CYII=",
+      "alt": "A close up of a knot on a table",
+      "photographer": {
+        "name": "Anastasia Anastasia",
+        "username": "anastasia3385437",
+        "url": "https://unsplash.com/@anastasia3385437"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-knot-on-a-table-rCr8vZS8j0Q",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-solene": {
+      "slot": "cut-p-solene",
+      "id": "AhIQL2CKq7g",
+      "raw": "https://images.unsplash.com/photo-1588444968576-f8fe92ce56fd?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8N3x8ZGlhbW9uZCUyMG5lY2tsYWNlfGVufDF8fHx8MTc5MTQ1MTcxNnww&ixlib=rb-4.1.0",
+      "width": 5184,
+      "height": 3456,
+      "color": "#d9d9d9",
+      "blurHash": "L7Op.7t7-;?I~qt7IUInbHRjWBxu",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAdUlEQVR4nB3LWw7DIAxEUfa/sUpRXgRwDMY4pN3HVPLfnCtNmO8P9ryQPlBF0dXcw6a38Myvo3UFN0ETheoDVfMdzKa/uDYUYhAxmAW1dm9Bu6G2jisX7GfEGRNyvkFUkelGEBmOdT/wWRas24F0EUphxFTwBwN1jZ43OEvBAAAAAElFTkSuQmCC",
+      "alt": "Silver necklace with heart pendant",
+      "photographer": {
+        "name": "Sabrianna",
+        "username": "sabrinnaringquist",
+        "url": "https://unsplash.com/@sabrinnaringquist"
+      },
+      "photoUrl": "https://unsplash.com/photos/silver-necklace-with-heart-pendant-AhIQL2CKq7g",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-geometrie": {
+      "slot": "cut-p-geometrie",
+      "id": "IwLyt3yL8gc",
+      "raw": "https://images.unsplash.com/photo-1720686614747-cd62c0c26114?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mjl8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 6000,
+      "height": 4000,
+      "color": "#260c0c",
+      "blurHash": "LAE_Kq0NE1=x-.RR=_xt4:xa?Goy",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAApUlEQVR4nBXOywoBUQCA4fMgVlKSjYQINUqakUFyzahxiTSzMTGdkCxcEyUWkhV5zl++J/jEoZNlWUlhxoNUQ35sPcFupHF1ClwmOcSmobCopLHUBJausO7q3Jw6D1njOtURUovhFlPIdp693eI5H/BdD3mvTO5uDTGOBrAyEdymytFu8ZJ9Pos+r1mbk11GGF4PRtBHLx3GKSlsDZWzqfG/yXqSHzlqVR/s89mZAAAAAElFTkSuQmCC",
+      "alt": "A pair of earrings sitting on top of a wooden table",
+      "photographer": {
+        "name": "PRAHANT STUDIO",
+        "username": "prahantstudio",
+        "url": "https://unsplash.com/@prahantstudio"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-pair-of-earrings-sitting-on-top-of-a-wooden-table-IwLyt3yL8gc",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-trois": {
+      "slot": "cut-p-trois",
+      "id": "d5qU27rehlk",
+      "raw": "https://images.unsplash.com/photo-1719924998065-0c60e329ef58?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8Mnx8c29saXRhaXJlJTIwZW5nYWdlbWVudCUyMHJpbmd8ZW58MXx8fHwxNzkxNDUxNzE1fDA&ixlib=rb-4.1.0",
+      "width": 2160,
+      "height": 3840,
+      "color": "#a6a6a6",
+      "blurHash": "LbL4$-oft7j[~qj[j[fQ%NfQRjj[",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABLUlEQVR4nFXK2U7CYBBA4f/9L5XuQAttQRTZVJRgKOC+gFoVtagstoKKvsIx9MLEiy9nZjJiNvvhffZNGC14C7/+mb59IqJoQRgtlw8m0zmTyfyv48kMMRpHvI5Cnl+mBMGYp2AUC4bjmHh4HHI/CPBvB/SvfHq9G3p9n+vrO3x/gLjs9Tm/uOTo+JR2p0vLa+O1OxwcHnFycobodDu0PI+9RoNqrUapXKJSrbBTr9PcbyLquztsbdcobm7guA5WxiJrZymsr1GulBHFzSKF9UJ81A0DWVXQdA3TMnFzLsJx82RtByOVRpJVVlYlEtLyKUnatBCm5ZJK26i6SULSWUlocWU1haabiGQ6h5F0ULUMsmIiyWZcRbViwkjm0Y0cqu6gaDaq5sSWs6xk+QVuYjBFEZsi+AAAAABJRU5ErkJggg==",
+      "alt": "A couple of rings that are sitting on a table",
+      "photographer": {
+        "name": "alvian pratama",
+        "username": "arvihyann",
+        "url": "https://unsplash.com/@arvihyann"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-couple-of-rings-that-are-sitting-on-a-table-d5qU27rehlk",
+      "query": "diamond ring [white]",
+      "downloadTracked": true
+    },
+    "cut-p-goutte-studs": {
+      "slot": "cut-p-goutte-studs",
+      "id": "gCPvxrmSeYg",
+      "raw": "https://images.unsplash.com/photo-1717605876994-fbe98389ffbd?ixid=M3wxMDg2MDEwfDB8MXxzZWFyY2h8MjF8fGRpYW1vbmQlMjBzdHVkc3xlbnwxfHx8fDE3OTE1NDAzMDJ8MA&ixlib=rb-4.1.0",
+      "width": 3456,
+      "height": 5184,
+      "color": "#d9d9d9",
+      "blurHash": "L*K_E^xua#t7~qj?axj[IoRjoLWB",
+      "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAABbElEQVR4nC3KP0sbcRzA4e8LcAkduri7tEOLW6kgWAqFEh0csleIQkBqhdAMGbtYdTCgFSxkEBsCRgUTaqWSkhY9SCxnTXPJ5Xf/chdzieYdfErBZ36kN+gShD6272B6Nm3fxQo6qI6DoVpIeHtD9z60PQvlu9iBh/JsGqaBDO569PoBrm+jXIXt2Ti+i3IU9cY1MhyG9PsBnqewrCaO08Z1LUzTQNdryPC2R3jTwVFN2sYfrNZfbNOgca2jnVeQsNvBdxStuk79UsPQqzSvavzWfnF2UkL+72b9isuLClr5lGrlO9WfZ/z4VqKQ20Vq2gXnlTKnxUOK+3t8PfjCyVGewl6W7Y115PjokEI+R3Zni+3MCjubH/n8aZ2NtQ+k379DMpkMq6srpNNJlpfjJJNxUqkEi4tzxGLTSOLtEm8W5onGoky8Hmdy5ikvZ5/x/NU4Dx9HkMnoDE9eTCGPRpCIIKOCjAnyQBAR/gEpcyNobAxpXQAAAABJRU5ErkJggg==",
+      "alt": "A pair of diamond earrings sitting on top of a white cloth",
+      "photographer": {
+        "name": "Diego Castañeda",
+        "username": "disfruta_cafe",
+        "url": "https://unsplash.com/@disfruta_cafe"
+      },
+      "photoUrl": "https://unsplash.com/photos/a-pair-of-diamond-earrings-sitting-on-top-of-a-white-cloth-gCPvxrmSeYg",
+      "query": "diamond ring [white]",
       "downloadTracked": true
     }
   }

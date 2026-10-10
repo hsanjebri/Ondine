@@ -91,6 +91,43 @@ export const IMAGE_SLOTS = [
 
   // — hands in water
   { id: "water-02", query: "hands in water", orientation: "any", ratio: "4:5", purpose: "Moodboard, journal", altFallback: "Hands resting in water" },
+
+  // — composer cut-outs (background removed, see MEDIA.md)
+  { id: "cut-ring-solitaire", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: solitaire ring (cut-out)", altFallback: "A round solitaire diamond ring", pick: "vAYIS8-XBR8" },
+  { id: "cut-ring-halo", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: halo ring (cut-out)", altFallback: "A halo diamond ring", pick: "CCpQ12CZ2Pc" },
+  { id: "cut-ring-pave", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: pavé ring (cut-out)", altFallback: "An emerald-cut diamond ring with a pavé band", pick: "NhrcL_C0sFA" },
+  { id: "cut-ring-eternity", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: eternity band (cut-out)", altFallback: "A rose gold band set with diamonds", pick: "9FMSF5N65Yg" },
+  { id: "cut-bracelet-tennis", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: tennis bracelet (cut-out)", altFallback: "A diamond tennis bracelet", pick: "2z7MxnXQs3k" },
+  { id: "cut-bracelet-bangle", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: diamond bangle (cut-out)", altFallback: "A diamond bangle", pick: "zaUWCo5XX5w" },
+  { id: "cut-bracelet-cuff", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: cuff (cut-out)", altFallback: "A gold cuff set with diamonds", pick: "hoC_u_9yJ_Y" },
+  { id: "cut-necklace-pendant", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: halo pendant (cut-out)", altFallback: "A cushion halo diamond pendant", pick: "lbqW0O09RAM" },
+  { id: "cut-necklace-goutte", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: Goutte pendant (cut-out)", altFallback: "An open teardrop diamond pendant", pick: "eq9OPZJH6yQ" },
+  { id: "cut-necklace-riviere", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: rivière (cut-out)", altFallback: "A line of diamonds", pick: "jm4cbOKYk30" },
+  { id: "cut-earrings-studs", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: stud earrings (cut-out)", altFallback: "Diamond stud earrings", pick: "dzA9vh4jGFE" },
+  { id: "cut-earrings-halo", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: halo studs (cut-out)", altFallback: "Halo diamond stud earrings", pick: "Lqfqsij4EvQ" },
+  { id: "cut-earrings-hoops", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: hoops (cut-out, cropped)", altFallback: "Gold hoop earrings", pick: "ZoIt11TZoso" },
+  { id: "cut-stones", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Composer: loose diamonds, six shapes (cut-outs)", altFallback: "Loose diamonds in six shapes", pick: "iqD7nCuYFVM" },
+
+  // — catalogue cut-outs
+  { id: "cut-p-duo", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: duo (cut-out)", altFallback: "A piece of fine jewellery", pick: "ZWwC_6VfdAU" },
+  { id: "cut-p-princesse", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: princesse (cut-out)", altFallback: "A piece of fine jewellery", pick: "9xJ5s00mCzY" },
+  { id: "cut-p-larme-ring", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: larme-ring (cut-out)", altFallback: "A piece of fine jewellery", pick: "-w_1-mvkfUA" },
+  { id: "cut-p-trio", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: trio (cut-out)", altFallback: "A piece of fine jewellery", pick: "QA-yHvSFzOE" },
+  { id: "cut-p-rosee", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: rosee (cut-out)", altFallback: "A piece of fine jewellery", pick: "OzAQyDsUltE" },
+  { id: "cut-p-lune", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: lune (cut-out)", altFallback: "A piece of fine jewellery", pick: "Wcj6PVLiipQ" },
+  { id: "cut-p-coeur", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: coeur (cut-out)", altFallback: "A piece of fine jewellery", pick: "ZoDgJpXzDB8" },
+  { id: "cut-p-amour", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: amour (cut-out)", altFallback: "A piece of fine jewellery", pick: "IefG_1rqOFU" },
+  { id: "cut-p-perle-chain", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: perle-chain (cut-out)", altFallback: "A piece of fine jewellery", pick: "nZg0QpDtWdo" },
+  { id: "cut-p-belle-epoque", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: belle-epoque (cut-out)", altFallback: "A piece of fine jewellery", pick: "GkTLP8m-qjI" },
+  { id: "cut-p-initiale", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: initiale (cut-out)", altFallback: "A piece of fine jewellery", pick: "tB6cZcpfxMQ" },
+  { id: "cut-p-baguette", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: baguette (cut-out)", altFallback: "A piece of fine jewellery", pick: "LDgfWjbxQl8" },
+  { id: "cut-p-fleur", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: fleur (cut-out)", altFallback: "A piece of fine jewellery", pick: "raFVu3MLap8" },
+  { id: "cut-p-etoile", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: etoile (cut-out)", altFallback: "A piece of fine jewellery", pick: "n6bbbc3Oc-w" },
+  { id: "cut-p-noeud", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: noeud (cut-out)", altFallback: "A piece of fine jewellery", pick: "rCr8vZS8j0Q" },
+  { id: "cut-p-solene", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: solene (cut-out)", altFallback: "A piece of fine jewellery", pick: "AhIQL2CKq7g" },
+  { id: "cut-p-geometrie", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: geometrie (cut-out)", altFallback: "A piece of fine jewellery", pick: "IwLyt3yL8gc" },
+  { id: "cut-p-trois", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: trois (cut-out)", altFallback: "A piece of fine jewellery", pick: "d5qU27rehlk" },
+  { id: "cut-p-goutte-studs", query: "diamond ring [white]", orientation: "any", ratio: "1:1", purpose: "Catalogue: goutte-studs (cut-out)", altFallback: "A piece of fine jewellery", pick: "gCPvxrmSeYg" },
 ] as const satisfies readonly ImageSlot[];
 
 export type SlotId = (typeof IMAGE_SLOTS)[number]["id"];
