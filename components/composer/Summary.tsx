@@ -1,54 +1,76 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element -- the snapshot is a data URL taken from the canvas */
-import { useEffect, useState } from "react";
-import { describe, label, type StepId } from "@/lib/composer-options";
+import { useState } from "react";
+import cutouts from "@/data/cutouts.json";
+import {
+  ENGRAVING_PLACE,
+  describe,
+  label,
+  pieceName,
+  sizeLine,
+  stepsFor,
+  stoneLine,
+  type StepId,
+} from "@/lib/composer-options";
 import { configKey, encodeConfig } from "@/lib/composer-url";
 import { formatEuro } from "@/lib/format";
-import { priceRing } from "@/lib/pricing";
+import { price } from "@/lib/pricing";
 import { useComposer } from "@/store/composer";
 import { useCart } from "@/store/cart";
 import { useUI } from "@/store/ui";
+import { flyToBag } from "@/lib/fly-to-bag";
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { CountingPrice } from "./PriceBar";
+import { Stage } from "./Stage";
 
-/** Summary card: snapshot of the ring, every choice, the total and the next steps. */
+const CUT = cutouts as Record<string, { src: string }>;
+
+/** Summary card: the piece on its stage, every choice, the total and the next steps. */
 export function Summary() {
   const config = useComposer((s) => s.config);
-  const snapshot = useComposer((s) => s.snapshot);
   const setStep = useComposer((s) => s.setStep);
   const add = useCart((s) => s.add);
   const setBagOpen = useUI((s) => s.setBagOpen);
-  const [image, setImage] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const price = priceRing(config);
+  const [adding, setAdding] = useState(false);
+  const [added, setAdded] = useState(false);
+  const p = price(config);
   const query = encodeConfig(config);
+  const available = new Set(stepsFor(config).map((s) => s.id));
 
-  // Take the picture once the panel has settled (the camera may still be easing).
-  useEffect(() => {
-    if (!snapshot) return;
-    const id = window.setTimeout(() => setImage(snapshot(720)), 450);
-    return () => window.clearTimeout(id);
-  }, [snapshot, config]);
+  const rows: Array<{ step: StepId; label: string; value: string }> = (
+    [
+      { step: "piece", label: "Piece", value: pieceName(config) },
+      { step: "metal", label: "Metal", value: label.metal(config.metal) },
+      { step: "stone", label: "Stones", value: stoneLine(config) },
+      { step: "size", label: config.piece === "ring" ? "Size" : "Length", value: sizeLine(config) ?? "" },
+      {
+        step: "engraving",
+        label: "Engraving",
+        value: config.engraving ? `“${config.engraving}”, ${ENGRAVING_PLACE[config.piece]}` : "None",
+      },
+      { step: "box", label: "Box", value: label.box(config.box) },
+    ] as const
+  ).filter((r) => r.step === "piece" || available.has(r.step));
 
-  const rows: Array<{ step: StepId; label: string; value: string }> = [
-    { step: "setting", label: "Setting", value: label.setting(config.setting) },
-    { step: "metal", label: "Metal", value: label.metal(config.metal) },
-    { step: "stone", label: "Stone", value: `${config.carat.toFixed(2)} ct ${label.shape(config.shape).toLowerCase()}, ${config.colour} ${config.clarity}` },
-    { step: "size", label: "Size", value: config.size ? `EU ${config.size}` : "Ring sizer posted to you" },
-    { step: "engraving", label: "Engraving", value: config.engraving ? `“${config.engraving}”` : "None" },
-    { step: "box", label: "Box", value: label.box(config.box) },
-  ];
-
-  const addToBag = () => {
+  const addToBag = async () => {
+    if (adding) return;
+    setAdding(true);
+    // The piece on the big stage flies into the Bag button; it is added when it lands.
+    await flyToBag(document.querySelector<HTMLElement>('[data-fly-source="stage"]'));
     add({
       key: configKey(config),
-      name: `Composed ${label.setting(config.setting).toLowerCase()}`,
-      price: price.total,
+      name: `Composed — ${pieceName(config).toLowerCase()}`,
+      price: p.total,
       detail: describe(config),
-      image: snapshot?.(240) ?? undefined,
+      image: CUT[config.design].src,
+      cutout: config.design,
+      metal: config.metal,
+      href: `/composer?${query}`,
     });
-    setBagOpen(true);
+    setAdded(true);
+    setAdding(false);
+    window.setTimeout(() => setBagOpen(true), 750);
   };
 
   const share = async () => {
@@ -62,16 +84,20 @@ export function Summary() {
     }
   };
 
+  const lines: Array<[string, number]> = [
+    ["Design and making", p.making],
+    ["Metal", p.metal],
+    ...(p.stones ? [["Diamonds", p.stones] as [string, number]] : []),
+    ...(p.accents ? [["Accent diamonds", p.accents] as [string, number]] : []),
+    ...(p.box ? [["Box", p.box] as [string, number]] : []),
+  ];
+
   return (
     <div className="space-y-8">
       <figure className="theme-ink relative aspect-[4/3] overflow-hidden bg-black">
-        {image ? (
-          <img src={image} alt={`Your ring: ${describe(config)}`} className="h-full w-full object-cover" />
-        ) : (
-          <div className="mono absolute inset-0 flex items-center justify-center text-muted">preparing the picture…</div>
-        )}
-        <span className="mono absolute top-3 left-3 text-ivory/70">your ring</span>
-        <span className="mono absolute top-3 right-3 text-ivory/70">pl. —</span>
+        <Stage config={config} interactive={false} />
+        <span className="mono absolute top-3 left-3 z-[7] text-ivory/70">your piece</span>
+        <span className="mono absolute top-3 right-3 z-[7] text-ivory/70">pl. —</span>
       </figure>
 
       <dl className="divide-y divide-line border-y border-line">
@@ -89,35 +115,32 @@ export function Summary() {
       </dl>
 
       <dl className="space-y-1.5 text-sm text-muted">
-        {[
-          ["Setting and making", price.setting],
-          ["Metal", price.metal],
-          ["Centre stone", price.stone],
-          ...(price.accents ? [["Accent diamonds", price.accents] as const] : []),
-          ...(price.box ? [["Box", price.box] as const] : []),
-        ].map(([k, v]) => (
-          <div key={k as string} className="flex justify-between">
+        {lines.map(([k, v]) => (
+          <div key={k} className="flex justify-between">
             <dt>{k}</dt>
-            <dd className="tabular">{formatEuro(v as number)}</dd>
+            <dd className="tabular">{formatEuro(v)}</dd>
           </div>
         ))}
         <div className="flex items-baseline justify-between border-t border-line pt-3 text-fg">
           <dt className="micro">Total</dt>
           <dd className="font-serif text-3xl">
-            <CountingPrice value={price.total} />
+            <CountingPrice value={p.total} />
           </dd>
         </div>
       </dl>
 
       <div className="flex flex-col gap-3">
-        <button type="button" className="btn w-full" onClick={addToBag}>
-          Add to bag
+        <button type="button" className="btn w-full" onClick={addToBag} disabled={adding} aria-busy={adding}>
+          {adding ? "Adding…" : "Add to bag"}
         </button>
+        <p className="sr-only" aria-live="polite">
+          {added ? `${pieceName(config)} added to your bag` : ""}
+        </p>
         <TransitionLink href={`/?${query}#appointment`} className="btn-ghost w-full">
           Book an appointment to see it
         </TransitionLink>
         <button type="button" className="mono link-line self-center text-muted" onClick={share}>
-          {copied ? "link copied" : "copy a link to this ring"}
+          {copied ? "link copied" : "copy a link to this piece"}
         </button>
       </div>
     </div>
